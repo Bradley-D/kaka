@@ -1,6 +1,6 @@
 === kaka ===
 
-Contributors: automattic
+Contributors: Bradley Davis
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.5
