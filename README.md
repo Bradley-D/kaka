@@ -40,5 +40,5 @@ Then, update the stylesheet header in `style.css`, the links in `footer.php` wit
 Credits
 ----------------------------------
 - Underscores by Automattic - http://underscores.me/
-- Normalize.css by Nicolas Gallagher - github.com/necolas/normalize.css
+- Normalize.css by Nicolas Gallagher - https://github.com/necolas/normalize.css
 - Responsive Grid System by DENIS LEBLANC - http://responsive.gs
