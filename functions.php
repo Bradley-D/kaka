@@ -120,7 +120,7 @@ add_action( 'widgets_init', 'kaka_widgets_init' );
  * Enqueue scripts and styles.
  */
 function kaka_scripts() {
-	wp_enqueue_style( 'kaka-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'kaka-style', trailingslashit( get_template_directory_uri() ) . 'dist/style.css' );
 
 	wp_enqueue_script( 'kaka-navigation', trailingslashit( get_template_directory_uri() ) . 'js/navigation.js', array(), '20151215', true );
 
