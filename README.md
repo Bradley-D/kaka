@@ -37,6 +37,8 @@ OR
 
 Then, update the stylesheet header in `style.css`, the links in `footer.php` with your own information and rename `kaka.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
 
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
-
-Good luck!
+Credits
+----------------------------------
+- Underscores by Automattic - http://underscores.me/
+- Normalize.css by Nicolas Gallagher - github.com/necolas/normalize.css
+- Responsive Grid System by DENIS LEBLANC - http://responsive.gs
