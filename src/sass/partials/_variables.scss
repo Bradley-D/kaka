@@ -25,7 +25,7 @@ $gray:#f1f1f1;
 $white:#fff;
 // Text.
 $black-text: #414141;
-$grey-text:#8e8e8e;
+$gray-text:#8e8e8e;
 
 /*--------------------------------------------------------------
 # Heading Size.
@@ -112,7 +112,7 @@ $h6:1.8rem;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
 	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
+	color: $black-text;
 	font-size: 12px;
 	font-size: 0.75rem;
 	line-height: 1;
@@ -127,10 +127,23 @@ $h6:1.8rem;
   border-color: #aaa #bbb #bbb;
 }
 
-// Sets
+// Sets input[type="text"], input[type="email"], input[type="url"], input[type="password"],
+// input[type="search"], input[type="number"], input[type="tel"], input[type="range"],
+// input[type="date"], input[type="month"], input[type="week"], input[type="time"],
+// input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea
 @mixin form-input-textarea {
-  color: #666;
+  color: $black-text;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px;
+}
+
+/*--------------------------------------------------------------
+# Mixin - Tables
+--------------------------------------------------------------*/
+@mixin table-font {
+  font-family:$font-family-code;
+  font-size:.9rem;
+  font-weight:normal;
+  line-height:1.2em;
 }

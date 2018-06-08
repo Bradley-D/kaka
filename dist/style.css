@@ -20,6 +20,9 @@
 # Mixin - Forms & Buttons
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+# Mixin - Tables
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 /* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -370,6 +373,10 @@ figure {
   /* Extra wide images within figure tags don't overflow the content area. */ }
 
 table {
+  font-family: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: .9rem;
+  font-weight: normal;
+  line-height: 1.2em;
   margin: 0 0 1.5em;
   width: 100%; }
 
@@ -477,7 +484,7 @@ input[type="submit"] {
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
+  color: #414141;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
@@ -514,7 +521,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  color: #666;
+  color: #414141;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px; }
