@@ -14,7 +14,7 @@ hr {
 
 ul, ol {
 	@include font-content;
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 1.64rem 0;
 }
 
 ul {
@@ -60,50 +60,40 @@ table {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-button,
-input,
-select,
-optgroup,
-textarea {
-	color: #404040;
-	@include font-content;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	@include hx-content;
 }
-h1,
-.h1 {
+
+h1, .h1 {
 	font-size:$h1;
 }
 
-h2,
-.h2 {
+h2, .h2 {
 	font-size:$h2;
 	&.widget-title {
 		@include widget-title;
 	}
 }
 
-h3,
-.h3 {
+h3, .h3 {
 	font-size:$h3;
 }
 
-h4,
-.h4 {
+h4, .h4 {
 	font-size:$h4;
 }
 
-h5,
-.h5 {
+h5, .h5 {
 	font-size:$h5;
 }
 
-h6,
-.h6 {
+h6, .h6 {
 	font-size:$h6;
+}
+
+.entry-title {
+	@include entry-title;
 }
 
 p {
@@ -116,7 +106,9 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+	border-left:5px solid $text-black;
+	margin: 0 0 1.64rem 0;
+	padding: 0 0 0 1.64rem;
 }
 
 address {
@@ -148,6 +140,14 @@ big {
 	font-size: 125%;
 }
 
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: #404040;
+	@include font-content;
+}
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -222,9 +222,15 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-## Header
+## Structure
 --------------------------------------------------------------*/
-header {
+/*--------------------------------------------------------------
+## Structure - Header
+--------------------------------------------------------------*/
+header:not(.entry-header) {
+	border-bottom:1px solid $gray;
+	margin-bottom:3rem;
+	padding-bottom:3rem;
 	.site-branding {
 		.site-title {
 			font-size:$h2;
@@ -233,35 +239,83 @@ header {
 	}
 }
 /*--------------------------------------------------------------
-## Footer
+## Structure - Primary
+--------------------------------------------------------------*/
+article {
+	&.sticky {
+		display: block;
+	}
+	&.hentry {
+		margin: 0 0 3rem;
+	}
+	.entry-meta {
+			@include entry-meta;
+	}
+	.entry-footer {
+		@include entry-footer;
+	}
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+/*--------------------------------------------------------------
+## Structure - Sidebar + Widgets
+--------------------------------------------------------------*/
+.widget {
+	ul {
+		list-style:none;
+		padding-left:0;
+	}
+	a {
+		color:$text-black;
+	}
+}
+
+/*--------------------------------------------------------------
+## Structure - Footer
 --------------------------------------------------------------*/
 footer:not(.entry-footer) {
-	background-color:$black;
-	color:$white;
+	background-color:$white;
+	border-top:1px solid $gray;
+	color:$black;
+	margin-top:3rem;
 	padding:3rem 0;
 	.site-info {
 		font-size:.7rem;
 	}
 	a {
-		color:$white;
+		color:$black;
 	}
 }
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: $link;
 }
 
 a:visited {
-	color: purple;
+	color: $link-visited;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: $link-active-focus-hover;
 }
 
 a:focus {
+	color:$gray;
 	outline: thin dotted;
 }
 
@@ -472,36 +526,7 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-.sticky {
-	display: block;
-}
 
-.hentry {
-	margin: 0 0 1.5em;
-}
-
-.updated:not(.published) {
-	display: none;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
-
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
-
-.entry-meta {
-		@include entry-meta;
-}
-
-.entry-footer {
-	@include entry-footer;
-}
 
 /*--------------------------------------------------------------
 ## Comments

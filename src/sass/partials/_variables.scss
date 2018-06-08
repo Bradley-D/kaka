@@ -23,9 +23,21 @@ $container-full:100%;
 $black:#121212;
 $gray:#f1f1f1;
 $white:#fff;
-// Text.
-$black-text:#414141;
-$gray-text:#8e8e8e;
+
+$text-black:#414141;
+$text-gray:#8e8e8e;
+
+$link:$text-black;
+$link-active-focus-hover:$text-gray;
+$link-visited:$text-black;
+
+
+
+// Element Colors.
+$link-widget:$text-black;
+$link-widget-active-focus-hover:$link-active-focus-hover;
+$link-widget-visited:$text-black;
+
 
 /*--------------------------------------------------------------
 # Heading Size.
@@ -36,122 +48,3 @@ $h3:1.8rem;
 $h4:1.8rem;
 $h5:1.8rem;
 $h6:1.8rem;
-
-/*--------------------------------------------------------------
-# Mixin - Structure - Header
---------------------------------------------------------------*/
-@mixin header{}
-/*--------------------------------------------------------------
-# Mixin - Structure - Footer
---------------------------------------------------------------*/
-@mixin footer {}
-/*--------------------------------------------------------------
-# Mixin - Typography
---------------------------------------------------------------*/
-// Sets font family and base size to calculate rem from.
-// This is and should only be applied to body.
-@mixin font-base {
-  font-family:$font-family-base;
-  font-size:$font-size-base;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-// Sets a standard for all content
-@mixin font-content {
-  font-size:1.2rem;
-  font-weight:100;
-  line-height:1.8rem;
-}
-
-// Sets family and size for code, kbd, tt, var
-@mixin font-code {
-  font-family:$font-family-code;
-  font-size:.9rem;
-  font-weight:normal;
-  line-height:1.2em;
-}
-
-@mixin font-pre {
-  background: $gray;
-  font-family:$font-family-pre;
-  font-size:1rem;
-  font-weight:normal;
-  line-height:1.4em;
-  padding: 1.6em;
-  white-space: pre-wrap;
-}
-
-// Sets headings in content, eg h1, h2 etc.
-@mixin hx-content {
-  line-height:1em;
-  margin:2em 0;
-  text-transform:uppercase;
-}
-
-// Sets entry meta under title of pages/posts etc
-@mixin entry-meta {
-  @include font-content;
-}
-
-// Sets entry footer for categories and tags under posts etc
-@mixin entry-footer {
-  @include font-content;
-}
-
-/*--------------------------------------------------------------
-# Mixin - Header Title & Widget Titles
---------------------------------------------------------------*/
-// Sets widget titles that get used in the sidebar and footer
-@mixin widget-title {
-  font-size:$h3;
-  line-height:1em;
-  margin:0 0 .5em;
-  text-transform:uppercase;
-}
-
-/*--------------------------------------------------------------
-# Mixin - Forms & Buttons
---------------------------------------------------------------*/
-// Sets form and button styles for button, input[type="button"],
-//input[type="reset"], input[type="submit"]
-@mixin form-button {
-  border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: $black-text;
-	font-size: 12px;
-	font-size: 0.75rem;
-	line-height: 1;
-	padding: .6em 1em .4em;
-}
-// Sets the above for the hover
-@mixin form-button-hover {
-  border-color: #ccc #bbb #aaa;
-}
-// Sets the above for active and focus state
-@mixin form-button-active-focus {
-  border-color: #aaa #bbb #bbb;
-}
-
-// Sets input[type="text"], input[type="email"], input[type="url"], input[type="password"],
-// input[type="search"], input[type="number"], input[type="tel"], input[type="range"],
-// input[type="date"], input[type="month"], input[type="week"], input[type="time"],
-// input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea
-@mixin form-input-textarea {
-  color: $black-text;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  padding: 3px;
-}
-
-/*--------------------------------------------------------------
-# Mixin - Tables
---------------------------------------------------------------*/
-@mixin table-font {
-  font-family:$font-family-code;
-  font-size:.9rem;
-  font-weight:normal;
-  line-height:1.2em;
-}
