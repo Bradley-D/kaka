@@ -1,4 +1,7 @@
 /*--------------------------------------------------------------
+# Variables - Typography.
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Structure.
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -12,6 +15,9 @@
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Mixin - Header Title & Widget Titles
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Mixin - Forms & Buttons
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -319,7 +325,7 @@ template {
 # Elements
 --------------------------------------------------------------*/
 body {
-  font-family: Helvetica,sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -432,21 +438,22 @@ address {
   margin: 0 0 1.5em; }
 
 pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 1.2rem;
-  font-weight: 100;
-  line-height: 1.8rem;
+  background: #f1f1f1;
+  font-family: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.4em;
+  padding: 1.6em;
+  white-space: pre-wrap;
   margin-bottom: 1.6em;
   max-width: 100%;
-  overflow: auto;
-  padding: 1.6em; }
+  overflow: auto; }
 
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 1.2rem;
-  font-weight: 100;
-  line-height: 1.8rem; }
+  font-family: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: .9rem;
+  font-weight: normal;
+  line-height: 1.2em; }
 
 abbr, acronym {
   border-bottom: 1px dotted #666;
@@ -528,10 +535,10 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-  color: #111; }
+  color: #121212; }
 
 select {
-  border: 1px solid #ccc; }
+  border: 1px solid #f1f1f1; }
 
 textarea {
   width: 100%; }
