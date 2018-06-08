@@ -12,9 +12,10 @@ hr {
 	margin-bottom: 1.5em;
 }
 
-ul, ol {
+ol,
+ul {
 	@include font-content;
-	margin: 0 0 1.64rem 0;
+	margin: 0 0 1.64rem;
 }
 
 ul {
@@ -25,8 +26,8 @@ ol {
 	list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li > ol,
+li > ul {
 	margin-bottom: 0;
 	margin-left: 1.5em;
 }
@@ -56,49 +57,63 @@ table {
 	@include table-font;
 	margin: 0 0 1.5em;
 	width: 100%;
-	td, th {
-		border-bottom:1px solid $gray;
-		padding:.2rem;
+
+	td,
+	th {
+		border-bottom: 1px solid $gray;
+		padding: 0.2rem;
 	}
 }
-
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	clear: both;
 	@include hx-content;
 }
 
-h1, .h1 {
-	font-size:$h1;
+.h1,
+h1 {
+	font-size: $h1;
 }
 
-h2, .h2 {
-	font-size:$h2;
+.h2,
+h2 {
+	font-size: $h2;
+
 	&.widget-title {
 		@include widget-title;
 	}
 }
 
-h3, .h3 {
-	font-size:$h3;
+.h3,
+h3 {
+	font-size: $h3;
 }
 
-h4, .h4 {
-	font-size:$h4;
+.h4,
+h4 {
+	font-size: $h4;
 }
 
-h5, .h5 {
-	font-size:$h5;
+.h5,
+h5 {
+	font-size: $h5;
 }
 
-h6, .h6 {
-	font-size:$h6;
+.h6,
+h6 {
+	font-size: $h6;
 }
 
 .entry-title {
 	@include entry-title;
+
 	a {
 		text-decoration: none;
 	}
@@ -109,13 +124,16 @@ p {
 	margin-bottom: 1.5em;
 }
 
-dfn, cite, em, i {
+cite,
+dfn,
+em,
+i {
 	font-style: italic;
 }
 
 blockquote {
-	border-left:5px solid $text-black;
-	margin: 0 0 1.64rem 0;
+	border-left: 5px solid $text-black;
+	margin: 0 0 1.64rem;
 	padding: 0 0 0 1.64rem;
 }
 
@@ -130,16 +148,21 @@ pre {
 	overflow: auto;
 }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
 	@include font-code;
 }
 
-abbr, acronym {
+abbr,
+acronym {
 	border-bottom: 1px dotted #666;
 	cursor: help;
 }
 
-mark, ins {
+ins,
+mark {
 	background: #fff9c0;
 	text-decoration: none;
 }
@@ -150,8 +173,8 @@ big {
 
 button,
 input,
-select,
 optgroup,
+select,
 textarea {
 	color: #404040;
 	@include font-content;
@@ -163,7 +186,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  @include form-button;
+	@include form-button;
 }
 
 button:hover,
@@ -173,7 +196,8 @@ input[type="submit"]:hover {
 	@include form-button-hover;
 }
 
-button:active, button:focus,
+button:active,
+button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -199,7 +223,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
- @include form-input-textarea;
+	@include form-input-textarea;
 }
 
 input[type="text"]:focus,
@@ -218,7 +242,7 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: $black
+	color: $black;
 }
 
 select {
@@ -228,7 +252,6 @@ select {
 textarea {
 	width: 100%;
 }
-
 /*--------------------------------------------------------------
 ## Structure
 --------------------------------------------------------------*/
@@ -236,30 +259,34 @@ textarea {
 ## Structure - Header
 --------------------------------------------------------------*/
 header:not(.entry-header) {
-	border-bottom:1px solid $gray;
-	margin-bottom:3rem;
-	padding:1.5rem 0;
-	.header-container{
-		@media ( min-width : $screen-md ) {
+	border-bottom: 1px solid $gray;
+	margin-bottom: 3rem;
+	padding: 1.5rem 0;
+
+	.header-container {
+		@media (min-width : $screen-md) {
 			display: flex;
 			align-items: center;
 		}
+
 		.site-branding {
 			.site-title {
-				color:$text-black;
-				font-size:$h2;
-				font-weight:bold;
-				line-height:1em;
-				margin:0;
+				color: $text-black;
+				font-size: $h2;
+				font-weight: bold;
+				line-height: 1em;
+				margin: 0;
 				text-transform: uppercase;
+
 				a {
 					text-decoration: none;
 				}
 			}
+
 			.site-description {
-					color:$text-gray;
-					margin:0;
-					text-transform: uppercase;
+				color: $text-gray;
+				margin: 0;
+				text-transform: uppercase;
 			}
 		}
 	}
@@ -271,21 +298,22 @@ article {
 	&.sticky {
 		display: block;
 	}
+
 	&.hentry {
 		margin: 0 0 3rem;
 	}
+
 	.entry-meta {
-			@include entry-meta;
+		@include entry-meta;
 	}
+
 	.entry-footer {
 		@include entry-footer;
+
 		.cat-links,
 		.tags-links {
-			margin-right:1.64rem;
+			margin-right: 1.64rem;
 		}
-		.cat-links {}
-		.tags-links {}
-		.edit-link {}
 	}
 }
 
@@ -293,9 +321,9 @@ article {
 	display: none;
 }
 
-.page-content,
 .entry-content,
-.entry-summary {
+.entry-summary,
+.page-content {
 	margin: 1.5em 0 0;
 }
 
@@ -308,28 +336,30 @@ article {
 --------------------------------------------------------------*/
 .widget {
 	ul {
-		list-style:none;
-		padding-left:0;
+		list-style: none;
+		padding-left: 0;
 	}
+
 	a {
-		color:$text-black;
+		color: $text-black;
 	}
 }
-
 /*--------------------------------------------------------------
 ## Structure - Footer
 --------------------------------------------------------------*/
 footer:not(.entry-footer) {
-	background-color:$white;
-	border-top:1px solid $gray;
-	color:$black;
-	margin-top:3rem;
-	padding:3rem 0;
+	background-color: $white;
+	border-top: 1px solid $gray;
+	color: $black;
+	margin-top: 3rem;
+	padding: 3rem 0;
+
 	.site-info {
-		font-size:.7rem;
+		font-size: 0.7rem;
 	}
+
 	a {
-		color:$black;
+		color: $black;
 	}
 }
 /*--------------------------------------------------------------
@@ -343,19 +373,21 @@ a:visited {
 	color: $link-visited;
 }
 
-a:hover, a:focus, a:active {
+a:active,
+a:focus,
+a:hover {
 	color: $link-active-focus-hover;
 }
 
 a:focus {
-	color:$gray;
+	color: $gray;
 	outline: thin dotted;
 }
 
-a:hover, a:active {
+a:active,
+a:hover {
 	outline: 0;
 }
-
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -364,35 +396,43 @@ a:hover, a:active {
 	display: block;
 	float: left;
 	width: 100%;
+
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+
 		li {
-			float:left;
-			margin-left:1.64rem;
-			position:relative;
-			text-transform:uppercase;
+			float: left;
+			margin-left: 1.64rem;
+			position: relative;
+			text-transform: uppercase;
+
 			ul {
 				width: 200px;
+
 				li {
-					margin-left:0;
-					padding:.25rem .8rem;
-					width:100%;
+					margin-left: 0;
+					padding: 0.25rem 0.8rem;
+					width: 100%;
+
 					&:hover {
-						background:$gray;
-						& >	a {
-							color:$text-black;
+						background: $gray;
+
+						& > a {
+							color: $text-black;
 						}
 					}
 				}
+
 				a {
-					color:$white;
+					color: $white;
 				}
 			}
 		}
 	}
+
 	a {
 		display: block;
 		text-decoration: none;
@@ -400,7 +440,7 @@ a:hover, a:active {
 }
 
 .main-navigation ul ul {
-	background:$black;
+	background: $black;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
@@ -414,67 +454,53 @@ a:hover, a:active {
 	top: 0;
 }
 
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
+.main-navigation ul ul li.focus > ul,
+.main-navigation ul ul li:hover > ul {
 	left: 100%;
 }
 
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li.focus > ul,
+.main-navigation ul li:hover > ul {
 	left: auto;
 }
-
-.main-navigation li {
-	// float:left;
-	// margin-left:1.64rem;
-	// position:relative;
-	// text-transform:uppercase;
-}
-
-.main-navigation a {
-	// display: block;
-	// text-decoration: none;
-}
-
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.main-navigation.toggled ul,
+.menu-toggle {
 	display: block;
 }
-
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
 	}
+
 	.main-navigation ul {
 		display: block;
 	}
 }
 
 .site-main .comment-navigation,
-.site-main .posts-navigation,
-.site-main .post-navigation {
+.site-main .post-navigation,
+.site-main .posts-navigation {
 	margin: 0 0 1.5em;
 	overflow: hidden;
 }
 
 .comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
+.post-navigation .nav-previous,
+.posts-navigation .nav-previous {
 	@include font-content;
 	float: left;
 	width: 50%;
 }
 
 .comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
+.post-navigation .nav-next,
+.posts-navigation .nav-next {
 	@include font-content;
 	float: right;
 	text-align: right;
 	width: 50%;
 }
-
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -489,7 +515,8 @@ a:hover, a:active {
 	padding: 0;
 	position: absolute !important;
 	width: 1px;
-	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+	word-wrap: normal !important;
+	/* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
 .screen-reader-text:focus {
@@ -511,12 +538,10 @@ a:hover, a:active {
 	z-index: 100000;
 	/* Above WP toolbar. */
 }
-
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus {
 	outline: 0;
 }
-
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
@@ -538,36 +563,34 @@ a:hover, a:active {
 	margin-left: auto;
 	margin-right: auto;
 }
-
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-.clear:before,
 .clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
+.clear:before,
 .comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
+.comment-content:before,
+.entry-content:after,
+.entry-content:before,
 .site-content:after,
+.site-content:before,
+.site-footer:after,
 .site-footer:before,
-.site-footer:after {
+.site-header:after,
+.site-header:before {
 	content: "";
 	display: table;
 	table-layout: fixed;
 }
 
 .clear:after,
-.entry-content:after,
 .comment-content:after,
-.site-header:after,
+.entry-content:after,
 .site-content:after,
-.site-footer:after {
+.site-footer:after,
+.site-header:after {
 	clear: both;
 }
-
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -579,15 +602,12 @@ a:hover, a:active {
 .widget select {
 	max-width: 100%;
 }
-
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-
-
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -598,7 +618,6 @@ a:hover, a:active {
 .bypostauthor {
 	display: block;
 }
-
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -608,36 +627,31 @@ a:hover, a:active {
 	/* Theme Footer (when set to scrolling) */
 	display: none;
 }
-
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
 	display: block;
 }
-
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
-.page-content .wp-smiley,
+.comment-content .wp-smiley,
 .entry-content .wp-smiley,
-.comment-content .wp-smiley {
+.page-content .wp-smiley {
 	border: none;
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 0;
 }
-
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
 object {
 	max-width: 100%;
 }
-
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
 	display: inline-block;
 }
-
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
@@ -659,7 +673,6 @@ object {
 .wp-caption-text {
 	text-align: center;
 }
-
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/

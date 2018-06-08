@@ -1,57 +1,46 @@
 /*--------------------------------------------------------------
 # Media queries.
 --------------------------------------------------------------*/
-$screen-md:768px;
-$screen-lg:992px;
-$screen-xl:1200px;
-
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
 /*--------------------------------------------------------------
 # Variables - Typography.
 --------------------------------------------------------------*/
 // Set to the body
-$font-family-base:Helvetica,sans-serif;
-$font-size-base:10px;
-
+$font-family-base: Helvetica,sans-serif;
+$font-size-base: 10px;
 // Used for code, kbd, tt, var
-$font-family-code:Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font-family-code: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 // Used for pre
-$font-family-pre:Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-
+$font-family-pre: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 /*--------------------------------------------------------------
 # Structure.
 --------------------------------------------------------------*/
-$container:1140px;
-$container-full:100%;
-
+$container: 1140px;
+$container-full: 100%;
 /*--------------------------------------------------------------
 # Colors.
 --------------------------------------------------------------*/
 // Base.
-$black:#121212;
-$gray:#f1f1f1;
-$white:#fff;
-
-$text-black:#414141;
-$text-gray:#8e8e8e;
-
-$link:$text-black;
-$link-active-focus-hover:$text-gray;
-$link-visited:$text-black;
-
-
-
+$black: #121212;
+$gray: #f1f1f1;
+$white: #fff;
+$text-black: #414141;
+$text-gray: #8e8e8e;
+$link: $text-black;
+$link-active-focus-hover: $text-gray;
+$link-visited: $text-black;
 // Element Colors.
-$link-widget:$text-black;
-$link-widget-active-focus-hover:$link-active-focus-hover;
-$link-widget-visited:$text-black;
-
-
+$link-widget: $text-black;
+$link-widget-active-focus-hover: $link-active-focus-hover;
+$link-widget-visited: $text-black;
 /*--------------------------------------------------------------
 # Heading Size.
 --------------------------------------------------------------*/
-$h1:3.4rem;
-$h2:2.6rem;
-$h3:1.8rem;
-$h4:1.8rem;
-$h5:1.8rem;
-$h6:1.8rem;
+$h1: 3.4rem;
+$h2: 2.6rem;
+$h3: 1.8rem;
+$h4: 1.8rem;
+$h5: 1.8rem;
+$h6: 1.8rem;
