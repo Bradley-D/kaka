@@ -37,7 +37,8 @@
 
 /* 	DEFAULT ROW STYLES
 	Set bottom padding according to preference */
-.row { padding-bottom: 0em;
+.row {
+	padding-bottom: 0em;
 }
 
 /* DEFAULT COLUMN STYLES */
@@ -57,10 +58,6 @@
 		margin-left: 0;
 	}
 }
-
-
-
-
 /*	COLUMN WIDTH ON DISPLAYS +768px
 	You might need to play with media queries here to suite your design. */
 @media ( min-width : 768px ) {

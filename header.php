@@ -55,4 +55,4 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content container row">
+	<div id="content" class="site-content container row gutters">
