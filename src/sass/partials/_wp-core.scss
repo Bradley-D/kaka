@@ -285,6 +285,7 @@ header:not(.entry-header) {
 
 			.site-description {
 				color: $text-gray;
+				font-size: 1rem;
 				margin: 0;
 				text-transform: uppercase;
 			}
@@ -392,7 +393,6 @@ a:hover {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	// clear: both;
 	display: block;
 	float: left;
 	width: 100%;
@@ -402,6 +402,10 @@ a:hover {
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		@media screen and (min-width: $screen-md) {
+			display: block;
+			float: right;
+		}
 
 		li {
 			float: left;
@@ -435,6 +439,7 @@ a:hover {
 
 	a {
 		display: block;
+		font-size: 1rem;
 		text-decoration: none;
 	}
 }
@@ -468,13 +473,9 @@ a:hover {
 .menu-toggle {
 	display: block;
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: $screen-md) {
 	.menu-toggle {
 		display: none;
-	}
-
-	.main-navigation ul {
-		display: block;
 	}
 }
 
