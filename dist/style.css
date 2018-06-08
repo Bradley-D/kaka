@@ -343,11 +343,12 @@ hr {
   height: 1px;
   margin-bottom: 1.5em; }
 
-ul, ol {
+ol,
+ul {
   font-size: 1.2rem;
   font-weight: normal;
   line-height: 1.8rem;
-  margin: 0 0 1.64rem 0; }
+  margin: 0 0 1.64rem; }
 
 ul {
   list-style: disc; }
@@ -355,8 +356,8 @@ ul {
 ol {
   list-style: decimal; }
 
-li > ul,
-li > ol {
+li > ol,
+li > ul {
   margin-bottom: 0;
   margin-left: 1.5em; }
 
@@ -379,45 +380,58 @@ figure {
 table {
   border-spacing: 0;
   font-family: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: normal;
   line-height: 1.2em;
   margin: 0 0 1.5em;
   width: 100%; }
-  table td, table th {
+  table td,
+  table th {
     border-bottom: 1px solid #f1f1f1;
-    padding: .2rem; }
+    padding: 0.2rem; }
 
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both;
   line-height: 1.64em;
   margin: 1.64em 0;
   text-transform: uppercase; }
 
-h1, .h1 {
+.h1,
+h1 {
   font-size: 3.4rem; }
 
-h2, .h2 {
+.h2,
+h2 {
   font-size: 2.6rem; }
-  h2.widget-title, .h2.widget-title {
+  .h2.widget-title,
+  h2.widget-title {
     font-size: 1.8rem;
     line-height: 1em;
-    margin: 0 0 .5em;
+    margin: 0 0 0.5em;
     text-transform: uppercase; }
 
-h3, .h3 {
+.h3,
+h3 {
   font-size: 1.8rem; }
 
-h4, .h4 {
+.h4,
+h4 {
   font-size: 1.8rem; }
 
-h5, .h5 {
+.h5,
+h5 {
   font-size: 1.8rem; }
 
-h6, .h6 {
+.h6,
+h6 {
   font-size: 1.8rem; }
 
 .entry-title {
@@ -432,12 +446,15 @@ p {
   line-height: 1.8rem;
   margin-bottom: 1.5em; }
 
-dfn, cite, em, i {
+cite,
+dfn,
+em,
+i {
   font-style: italic; }
 
 blockquote {
   border-left: 5px solid #414141;
-  margin: 0 0 1.64rem 0;
+  margin: 0 0 1.64rem;
   padding: 0 0 0 1.64rem; }
 
 address {
@@ -455,17 +472,22 @@ pre {
   max-width: 100%;
   overflow: auto; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: normal;
   line-height: 1.2em; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+ins,
+mark {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -474,8 +496,8 @@ big {
 
 button,
 input,
-select,
 optgroup,
+select,
 textarea {
   color: #404040;
   font-size: 1.2rem;
@@ -497,7 +519,7 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6em 1em .4em; }
+  padding: 0.6em 1em 0.4em; }
 
 button:hover,
 input[type="button"]:hover,
@@ -505,7 +527,8 @@ input[type="reset"]:hover,
 input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa; }
 
-button:active, button:focus,
+button:active,
+button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -609,9 +632,9 @@ article .entry-footer {
 .updated:not(.published) {
   display: none; }
 
-.page-content,
 .entry-content,
-.entry-summary {
+.entry-summary,
+.page-content {
   margin: 1.5em 0 0; }
 
 .page-links {
@@ -637,7 +660,7 @@ footer:not(.entry-footer) {
   margin-top: 3rem;
   padding: 3rem 0; }
   footer:not(.entry-footer) .site-info {
-    font-size: .7rem; }
+    font-size: 0.7rem; }
   footer:not(.entry-footer) a {
     color: #121212; }
 
@@ -650,14 +673,17 @@ a {
 a:visited {
   color: #414141; }
 
-a:hover, a:focus, a:active {
+a:active,
+a:focus,
+a:hover {
   color: #8e8e8e; }
 
 a:focus {
   color: #f1f1f1;
   outline: thin dotted; }
 
-a:hover, a:active {
+a:active,
+a:hover {
   outline: 0; }
 
 /*--------------------------------------------------------------
@@ -681,7 +707,7 @@ a:hover, a:active {
         width: 200px; }
         .main-navigation ul li ul li {
           margin-left: 0;
-          padding: .25rem .8rem;
+          padding: 0.25rem 0.8rem;
           width: 100%; }
           .main-navigation ul li ul li:hover {
             background: #f1f1f1; }
@@ -706,17 +732,17 @@ a:hover, a:active {
   left: -999em;
   top: 0; }
 
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
+.main-navigation ul ul li.focus > ul,
+.main-navigation ul ul li:hover > ul {
   left: 100%; }
 
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li.focus > ul,
+.main-navigation ul li:hover > ul {
   left: auto; }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.main-navigation.toggled ul,
+.menu-toggle {
   display: block; }
 
 @media screen and (min-width: 37.5em) {
@@ -726,14 +752,14 @@ a:hover, a:active {
   .main-navigation ul {
     display: block; } }
 .site-main .comment-navigation,
-.site-main .posts-navigation,
-.site-main .post-navigation {
+.site-main .post-navigation,
+.site-main .posts-navigation {
   margin: 0 0 1.5em;
   overflow: hidden; }
 
 .comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
+.post-navigation .nav-previous,
+.posts-navigation .nav-previous {
   font-size: 1.2rem;
   font-weight: normal;
   line-height: 1.8rem;
@@ -741,8 +767,8 @@ a:hover, a:active {
   width: 50%; }
 
 .comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
+.post-navigation .nav-next,
+.posts-navigation .nav-next {
   font-size: 1.2rem;
   font-weight: normal;
   line-height: 1.8rem;
@@ -814,28 +840,28 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-.clear:before,
 .clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
+.clear:before,
 .comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
+.comment-content:before,
+.entry-content:after,
+.entry-content:before,
 .site-content:after,
+.site-content:before,
+.site-footer:after,
 .site-footer:before,
-.site-footer:after {
+.site-header:after,
+.site-header:before {
   content: "";
   display: table;
   table-layout: fixed; }
 
 .clear:after,
-.entry-content:after,
 .comment-content:after,
-.site-header:after,
+.entry-content:after,
 .site-content:after,
-.site-footer:after {
+.site-footer:after,
+.site-header:after {
   clear: both; }
 
 /*--------------------------------------------------------------
@@ -879,9 +905,9 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
-.page-content .wp-smiley,
+.comment-content .wp-smiley,
 .entry-content .wp-smiley,
-.comment-content .wp-smiley {
+.page-content .wp-smiley {
   border: none;
   margin-bottom: 0;
   margin-top: 0;
@@ -976,11 +1002,11 @@ object {
   width: 100%; }
 
 /*	SELF CLEARING FLOATS - CLEARFIX METHOD */
-.container:after,
-.row:after,
-.col:after,
 .clr:after,
-.group:after {
+.col:after,
+.container:after,
+.group:after,
+.row:after {
   content: "";
   display: table;
   clear: both; }
@@ -988,7 +1014,7 @@ object {
 /* 	DEFAULT ROW STYLES
 	Set bottom padding according to preference */
 .row {
-  padding-bottom: 0em; }
+  padding-bottom: 0; }
 
 /* DEFAULT COLUMN STYLES */
 .col {
