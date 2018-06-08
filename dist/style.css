@@ -8,7 +8,10 @@
 # Heading Size.
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# Mixin -
+# Mixin - Typography
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Mixin - Header Title & Widget Titles
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -315,20 +318,11 @@ template {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-html {
-  box-sizing: border-box; }
-
 body {
   font-family: Helvetica,sans-serif;
   font-size: 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-
-*,
-*:before,
-*:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit; }
 
 hr {
   background-color: #ccc;
@@ -762,6 +756,11 @@ a:hover, a:active {
   margin: 0 0 1.5em; }
 
 .entry-meta {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.8rem; }
+
+.entry-footer {
   font-size: 1.2rem;
   font-weight: 100;
   line-height: 1.8rem; }

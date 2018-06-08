@@ -26,7 +26,7 @@ $h5:1.8rem;
 $h6:1.8rem;
 
 /*--------------------------------------------------------------
-# Mixin -
+# Mixin - Typography
 --------------------------------------------------------------*/
 // Sets font family and base size to calculate rem from.
 // This is and should only be applied to body.
@@ -51,6 +51,19 @@ $h6:1.8rem;
   text-transform:uppercase;
 }
 
+// Sets entry meta under title of pages/posts etc
+@mixin entry-meta {
+  @include font-content;
+}
+
+// Sets entry footer for categories and tags under posts etc
+@mixin entry-footer {
+  @include font-content;
+}
+
+/*--------------------------------------------------------------
+# Mixin - Header Title & Widget Titles
+--------------------------------------------------------------*/
 @mixin widget-title {
   font-size:$h3;
   line-height:1em;
