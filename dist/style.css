@@ -165,29 +165,29 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-button,
 [type="button"],
 [type="reset"],
-[type="submit"] {
+[type="submit"],
+button {
   -webkit-appearance: button; }
 
 /**
  * Remove the inner border and padding in Firefox.
  */
-button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
   border-style: none;
   padding: 0; }
 
 /**
  * Restore the focus styles unset by the previous rule.
  */
-button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
   outline: 1px dotted ButtonText; }
 
 /**
@@ -330,10 +330,12 @@ template {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+html {
+  font-size: 10px; }
+
 body {
   color: #414141;
   font-family: Helvetica, sans-serif;
-  font-size: 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -341,13 +343,13 @@ hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.64em; }
 
 ol,
 ul {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: normal;
-  line-height: 1.8rem;
+  line-height: 1.64em;
   margin: 0 0 1.64rem; }
 
 ul {
@@ -359,13 +361,13 @@ ol {
 li > ol,
 li > ul {
   margin-bottom: 0;
-  margin-left: 1.5em; }
+  margin-left: 1.64em; }
 
 dt {
   font-weight: bold; }
 
 dd {
-  margin: 0 1.5em 1.5em; }
+  margin: 0 1.64em 1.64em; }
 
 img {
   height: auto;
@@ -380,10 +382,10 @@ figure {
 table {
   border-spacing: 0;
   font-family: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: normal;
-  line-height: 1.2em;
-  margin: 0 0 1.5em;
+  line-height: 1.64em;
+  margin: 0 0 1.64em;
   width: 100%; }
   table td,
   table th {
@@ -410,11 +412,11 @@ h1 {
 
 .h2,
 h2 {
-  font-size: 2.6rem; }
+  font-size: 4.6rem; }
   .h2.widget-title,
   h2.widget-title {
     font-size: 1.8rem;
-    line-height: 1em;
+    line-height: 1.64em;
     margin: 0 0 0.5em;
     text-transform: uppercase; }
 
@@ -441,10 +443,10 @@ h6 {
     text-decoration: none; }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: normal;
-  line-height: 1.8rem;
-  margin-bottom: 1.5em; }
+  line-height: 1.64em;
+  margin-bottom: 1.64em; }
 
 cite,
 dfn,
@@ -458,17 +460,17 @@ blockquote {
   padding: 0 0 0 1.64rem; }
 
 address {
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.64em; }
 
 pre {
   background: #f1f1f1;
   font-family: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: normal;
-  line-height: 1.4em;
-  padding: 1.6em;
+  line-height: 1.64em;
+  padding: 1.64em;
   white-space: pre-wrap;
-  margin-bottom: 1.6em;
+  margin-bottom: 1.64em;
   max-width: 100%;
   overflow: auto; }
 
@@ -477,9 +479,9 @@ kbd,
 tt,
 var {
   font-family: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: normal;
-  line-height: 1.2em; }
+  line-height: 1.64em; }
 
 abbr,
 acronym {
@@ -500,9 +502,9 @@ optgroup,
 select,
 textarea {
   color: #404040;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: normal;
-  line-height: 1.8rem; }
+  line-height: 1.64em; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -517,8 +519,8 @@ input[type="submit"] {
   background: #e6e6e6;
   color: #414141;
   font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
+  font-size: 1.4rem;
+  line-height: 1.6em;
   padding: 0.6em 1em 0.4em; }
 
 button:hover,
@@ -598,7 +600,7 @@ header:not(.entry-header) {
       align-items: center; } }
   header:not(.entry-header) .header-container .site-branding .site-title {
     color: #414141;
-    font-size: 2.6rem;
+    font-size: 4.6rem;
     font-weight: bold;
     line-height: 1em;
     margin: 0;
@@ -607,7 +609,7 @@ header:not(.entry-header) {
       text-decoration: none; }
   header:not(.entry-header) .header-container .site-branding .site-description {
     color: #8e8e8e;
-    font-size: 1rem;
+    font-size: 1.64rem;
     margin: 0;
     text-transform: uppercase; }
 
@@ -619,13 +621,13 @@ article.sticky {
 article.hentry {
   margin: 0 0 3rem; }
 article .entry-meta {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: normal;
-  line-height: 1.8rem; }
+  line-height: 1.64em; }
 article .entry-footer {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: normal;
-  line-height: 1.8rem; }
+  line-height: 1.64em; }
   article .entry-footer .cat-links,
   article .entry-footer .tags-links {
     margin-right: 1.64rem; }
@@ -640,7 +642,7 @@ article .entry-footer {
 
 .page-links {
   clear: both;
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.64em; }
 
 /*--------------------------------------------------------------
 ## Structure - Sidebar + Widgets
@@ -661,7 +663,7 @@ footer:not(.entry-footer) {
   margin-top: 3rem;
   padding: 3rem 0; }
   footer:not(.entry-footer) .site-info {
-    font-size: 0.7rem; }
+    font-size: 1.64rem; }
   footer:not(.entry-footer) a {
     color: #121212; }
 
@@ -722,7 +724,7 @@ a:hover {
           color: #fff; }
   .main-navigation a {
     display: block;
-    font-size: 1rem;
+    font-size: 1.64rem;
     text-decoration: none; }
 
 .main-navigation ul ul {
@@ -763,18 +765,18 @@ a:hover {
 .comment-navigation .nav-previous,
 .post-navigation .nav-previous,
 .posts-navigation .nav-previous {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: normal;
-  line-height: 1.8rem;
+  line-height: 1.64em;
   float: left;
   width: 50%; }
 
 .comment-navigation .nav-next,
 .post-navigation .nav-next,
 .posts-navigation .nav-next {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: normal;
-  line-height: 1.8rem;
+  line-height: 1.64em;
   float: right;
   text-align: right;
   width: 50%; }
@@ -804,9 +806,9 @@ a:hover {
   clip-path: none;
   color: #21759b;
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: normal;
-  line-height: 1.8rem;
+  line-height: 1.64em;
   font-weight: bold;
   height: auto;
   left: 5px;

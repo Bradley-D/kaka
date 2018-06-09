@@ -9,10 +9,9 @@ $screen-xl: 1200px;
 --------------------------------------------------------------*/
 // Set to the body
 $font-family-base: Helvetica,sans-serif;
-$font-size-base: 10px;
+$font-size-base: 10px; // This makes 1rem = 10px
 // Used for code, kbd, tt, var
-$font-family-code: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-// Used for pre
+$font-family-code: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; // Used for pre
 $font-family-pre: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 /*--------------------------------------------------------------
 # Structure.
@@ -30,8 +29,7 @@ $text-black: #414141;
 $text-gray: #8e8e8e;
 $link: $text-black;
 $link-active-focus-hover: $text-gray;
-$link-visited: $text-black;
-// Element Colors.
+$link-visited: $text-black; // Element Colors.
 $link-widget: $text-black;
 $link-widget-active-focus-hover: $link-active-focus-hover;
 $link-widget-visited: $text-black;
@@ -39,7 +37,7 @@ $link-widget-visited: $text-black;
 # Heading Size.
 --------------------------------------------------------------*/
 $h1: 3.4rem;
-$h2: 2.6rem;
+$h2: 4.6rem;
 $h3: 1.8rem;
 $h4: 1.8rem;
 $h5: 1.8rem;

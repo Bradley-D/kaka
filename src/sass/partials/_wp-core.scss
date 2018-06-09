@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+html {
+	font-size: $font-size-base;
+}
+
 body {
 	@include font-base;
 }
@@ -9,7 +13,7 @@ hr {
 	background-color: #ccc;
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.64em;
 }
 
 ol,
@@ -29,7 +33,7 @@ ol {
 li > ol,
 li > ul {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: 1.64em;
 }
 
 dt {
@@ -37,7 +41,7 @@ dt {
 }
 
 dd {
-	margin: 0 1.5em 1.5em;
+	margin: 0 1.64em 1.64em;
 }
 
 img {
@@ -55,7 +59,7 @@ figure {
 table {
 	border-spacing: 0;
 	@include table-font;
-	margin: 0 0 1.5em;
+	margin: 0 0 1.64em;
 	width: 100%;
 
 	td,
@@ -121,7 +125,7 @@ h6 {
 
 p {
 	@include font-content;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.64em;
 }
 
 cite,
@@ -138,12 +142,12 @@ blockquote {
 }
 
 address {
-	margin: 0 0 1.5em;
+	margin: 0 0 1.64em;
 }
 
 pre {
 	@include font-pre;
-	margin-bottom: 1.6em;
+	margin-bottom: 1.64em;
 	max-width: 100%;
 	overflow: auto;
 }
@@ -285,7 +289,7 @@ header:not(.entry-header) {
 
 			.site-description {
 				color: $text-gray;
-				font-size: 1rem;
+				font-size: 1.64rem;
 				margin: 0;
 				text-transform: uppercase;
 			}
@@ -330,7 +334,7 @@ article {
 
 .page-links {
 	clear: both;
-	margin: 0 0 1.5em;
+	margin: 0 0 1.64em;
 }
 /*--------------------------------------------------------------
 ## Structure - Sidebar + Widgets
@@ -356,7 +360,7 @@ footer:not(.entry-footer) {
 	padding: 3rem 0;
 
 	.site-info {
-		font-size: 0.7rem;
+		font-size: 1.64rem;
 	}
 
 	a {
@@ -439,7 +443,7 @@ a:hover {
 
 	a {
 		display: block;
-		font-size: 1rem;
+		font-size: 1.64rem;
 		text-decoration: none;
 	}
 }

@@ -6,31 +6,30 @@
 @mixin font-base {
   color: $text-black;
   font-family: $font-family-base;
-  font-size: $font-size-base;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 // Sets a standard for all content
 @mixin font-content {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: normal;
-  line-height: 1.8rem;
+  line-height: 1.64em;
 }
 // Sets family and size for code, kbd, tt, var
 @mixin font-code {
   font-family: $font-family-code;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: normal;
-  line-height: 1.2em;
+  line-height: 1.64em;
 }
 // Sets family and size for pre
 @mixin font-pre {
   background: $gray;
   font-family: $font-family-pre;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: normal;
-  line-height: 1.4em;
-  padding: 1.6em;
+  line-height: 1.64em;
+  padding: 1.64em;
   white-space: pre-wrap;
 }
 // Sets headings in content, eg h1, h2 etc.
@@ -57,7 +56,7 @@
 // Sets widget titles that get used in the sidebar and footer
 @mixin widget-title {
   font-size: $h3;
-  line-height: 1em;
+  line-height: 1.64em;
   margin: 0 0 0.5em;
   text-transform: uppercase;
 }
@@ -73,8 +72,8 @@
   background: #e6e6e6;
   color: $text-black;
   font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
+  font-size: 1.4rem;
+  line-height: 1.6em;
   padding: 0.6em 1em 0.4em;
 }
 // Sets the above for the hover
@@ -100,7 +99,7 @@
 --------------------------------------------------------------*/
 @mixin table-font {
   font-family: $font-family-code;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: normal;
-  line-height: 1.2em;
+  line-height: 1.64em;
 }
