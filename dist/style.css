@@ -592,7 +592,6 @@ textarea {
 --------------------------------------------------------------*/
 header:not(.entry-header) {
   border-bottom: 1px solid #f1f1f1;
-  margin-bottom: 3rem;
   padding: 1.5rem 0; }
   @media (min-width: 768px) {
     header:not(.entry-header) .header-container {
@@ -616,21 +615,23 @@ header:not(.entry-header) {
 /*--------------------------------------------------------------
 ## Structure - Primary
 --------------------------------------------------------------*/
-article.sticky {
-  display: block; }
-article.hentry {
-  margin: 0 0 3rem; }
-article .entry-meta {
-  font-size: 1.6rem;
-  font-weight: normal;
-  line-height: 1.64em; }
-article .entry-footer {
-  font-size: 1.6rem;
-  font-weight: normal;
-  line-height: 1.64em; }
-  article .entry-footer .cat-links,
-  article .entry-footer .tags-links {
-    margin-right: 1.64rem; }
+.site-content {
+  padding-top: 3rem; }
+  .site-content article.sticky {
+    display: block; }
+  .site-content article.hentry {
+    margin: 0 0 3rem; }
+  .site-content article .entry-meta {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.64em; }
+  .site-content article .entry-footer {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.64em; }
+    .site-content article .entry-footer .cat-links,
+    .site-content article .entry-footer .tags-links {
+      margin-right: 1.64rem; }
 
 .updated:not(.published) {
   display: none; }
@@ -1113,6 +1114,12 @@ object {
 /*--------------------------------------------------------------
 # Content Area
 --------------------------------------------------------------*/
+.feature-image-container-full {
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+  height: 100%; }
+
 /*--------------------------------------------------------------
 # Sidebar
 --------------------------------------------------------------*/

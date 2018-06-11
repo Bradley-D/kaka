@@ -153,6 +153,11 @@ require trailingslashit( get_template_directory() ) . 'inc/template-functions.ph
 require trailingslashit( get_template_directory() ) . 'inc/customizer.php';
 
 /**
+ * Load Kaka theme functions.
+ */
+ require trailingslashit( get_template_directory() ) . 'inc/theme-functions.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {

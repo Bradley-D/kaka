@@ -24,6 +24,8 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'kaka' ); ?></a>
 
+	<?php do_action( 'before_header' ); ?>
+
 	<header id="masthead" class="site-header">
 		<div class="header-container container row">
 			<div class="site-branding col span_4 clr">
@@ -56,5 +58,7 @@
 			</nav><!-- #site-navigation -->
 		</div><!-- #header-container  -->
 	</header><!-- #masthead -->
+
+	<?php do_action( 'after_header' ); ?>
 
 	<div id="content" class="site-content container row gutters">
