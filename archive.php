@@ -10,6 +10,8 @@
 get_header();
 ?>
 
+	<?php do_action( 'before_archive' ); ?>
+
 	<div id="primary" class="content-area col span_8 clr">
 		<main id="main" class="site-main">
 
@@ -17,8 +19,12 @@ get_header();
 
 			<header class="page-header">
 				<?php
+				do_action( 'before_archive_title' );
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
+				do_action( 'after_archive_title' );
+				do_action( 'before_archive_description' );
 				the_archive_description( '<div class="archive-description">', '</div>' );
+				do_action( 'after_archive_description' );
 				?>
 			</header><!-- .page-header -->
 
@@ -47,6 +53,8 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<?php do_action( 'after_archive' ); ?>
 
 <?php
 get_sidebar();

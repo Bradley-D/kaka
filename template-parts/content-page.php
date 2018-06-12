@@ -11,7 +11,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+
+		<?php do_action( 'before_page_title' ); ?>
+
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+		<?php do_action( 'after_page_title' ); ?>
+
 	</header><!-- .entry-header -->
 
 	<?php do_action( 'before_page_content' ); ?>

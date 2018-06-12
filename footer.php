@@ -16,6 +16,9 @@
 	<?php do_action( 'before_footer' ); ?>
 
 	<footer id="colophon" class="site-footer container-full">
+
+		<?php do_action( 'before_footer_content' ); ?>
+
 		<div class="site-info container">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kaka' ) ); ?>">
 				<?php
@@ -34,6 +37,9 @@
 				endif;
 				?>
 		</div><!-- .site-info -->
+
+		<?php do_action( 'after_footer_content' ); ?>
+		
 	</footer><!-- #colophon -->
 
 	<?php do_action( 'after_footer' ); ?>
