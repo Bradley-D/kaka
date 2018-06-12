@@ -14,7 +14,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php kaka_post_thumbnail(); ?>
+	<?php do_action( 'before_page_content' ); ?>
 
 	<div class="entry-content">
 		<?php
@@ -49,4 +49,5 @@
 			?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
+	<?php do_action( 'after_page_content' ); ?>
 </article><!-- #post-<?php the_ID(); ?> -->

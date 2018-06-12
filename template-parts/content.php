@@ -29,7 +29,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php kaka_post_thumbnail(); ?>
+	<?php do_action( 'before_post_content' ); ?>
 
 	<div class="entry-content">
 		<?php
@@ -52,6 +52,8 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
+
+	<?php do_action( 'after_post_content' ); ?>
 
 	<footer class="entry-footer">
 		<?php kaka_entry_footer(); ?>
