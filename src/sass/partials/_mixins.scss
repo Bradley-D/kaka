@@ -50,6 +50,7 @@
 # Mixin - Header Title & Widget Titles
 --------------------------------------------------------------*/
 @mixin entry-title {
+  font-size: $h1;
   line-height: 1.64em;
   margin: 0;
 }
