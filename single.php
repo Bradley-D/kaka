@@ -10,6 +10,8 @@
 get_header();
 ?>
 
+	<?php do_action( 'before_post' ); ?>
+
 	<div id="primary" class="content-area col span_8 clr">
 		<main id="main" class="site-main">
 
@@ -31,6 +33,8 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<?php do_action( 'after_post' ); ?>
 
 <?php
 get_sidebar();
