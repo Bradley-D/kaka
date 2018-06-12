@@ -27,6 +27,9 @@
 	<?php do_action( 'before_header' ); ?>
 
 	<header id="masthead" class="site-header">
+
+		<?php do_action( 'before_header_content' ); ?>
+
 		<div class="header-container container row">
 			<div class="site-branding col span_4 clr">
 				<?php
@@ -46,7 +49,6 @@
 					<p class="site-description"><?php echo $kaka_description; /* WPCS: xss ok. */ ?></p>
 				<?php endif; ?>
 			</div><!-- .site-branding -->
-
 			<nav id="site-navigation" class="main-navigation col span_8 clr">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kaka' ); ?></button>
 				<?php
@@ -57,6 +59,9 @@
 				?>
 			</nav><!-- #site-navigation -->
 		</div><!-- #header-container  -->
+
+		<?php do_action( 'after_header_content' ); ?>
+
 	</header><!-- #masthead -->
 
 	<?php do_action( 'after_header' ); ?>
