@@ -732,13 +732,16 @@ a:hover {
     text-decoration: none; }
 
 .main-navigation ul ul {
-  background: #121212;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
+  position: initial;
   top: 100%;
   left: -999em;
-  z-index: 99999;
-  position: absolute; }
+  z-index: 99999; }
+  @media (min-width: 768px) {
+    .main-navigation ul ul {
+      background: #121212;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      float: left;
+      position: absolute; } }
 
 .main-navigation ul ul ul {
   left: -999em;
@@ -1126,7 +1129,7 @@ object {
     width: 30%; }
     header .header-container .main-navigation button {
       background: #fff;
-      border-color: #fff;
+      border: 0;
       box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
       cursor: pointer;
       height: 52px;
@@ -1165,6 +1168,7 @@ object {
           bottom: -10px; }
     header .header-container .main-navigation .nav-menu {
       background-color: #fff;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       z-index: 200;
       position: absolute;
       text-align: center;
@@ -1178,7 +1182,10 @@ object {
         header .header-container .main-navigation .nav-menu li a {
           padding: 1.5rem 0; }
       header .header-container .main-navigation .nav-menu ul.sub-menu {
+        background: #f1f1f1;
         width: 100%; }
+        header .header-container .main-navigation .nav-menu ul.sub-menu a {
+          color: #414141; }
     header .header-container .main-navigation.toggled .hamburger {
       transform: rotate(45deg); }
       header .header-container .main-navigation.toggled .hamburger:after {

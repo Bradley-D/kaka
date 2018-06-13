@@ -23,7 +23,7 @@ header {
 
         button {
           background: $white;
-          border-color: $white;
+          border: 0;
           box-shadow: 0 0 0 0 $white, 0 0 0 0 $white;
           cursor: pointer;
           height: 52px;
@@ -75,6 +75,7 @@ header {
 
         .nav-menu {
           background-color: $white;
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
           z-index: 200;
           position: absolute;
           text-align: center;
@@ -93,7 +94,12 @@ header {
           }
 
           ul.sub-menu {
+            background: $gray;
             width: 100%;
+
+            a {
+              color: $text-black;
+            }
           }
         }
 
