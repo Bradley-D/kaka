@@ -415,10 +415,12 @@ a:hover {
 		}
 
 		li {
-			float: left;
 			margin-left: 1.64rem;
 			position: relative;
 			text-transform: uppercase;
+			@media screen and (min-width: $screen-md) {
+				float: left;
+			}
 
 			ul {
 				width: 200px;
@@ -452,13 +454,16 @@ a:hover {
 }
 
 .main-navigation ul ul {
-	background: $black;
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
+	position: initial;
 	top: 100%;
 	left: -999em;
 	z-index: 99999;
+	@media (min-width : $screen-md) {
+		background: $black;
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+		float: left;
+		position: absolute;
+	}
 }
 
 .main-navigation ul ul ul {

@@ -22,7 +22,7 @@ if ( ! function_exists( 'kaka_setup' ) ) :
 		 * If you're building a theme based on kaka, use a find and replace
 		 * to change 'kaka' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'kaka', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'kaka', trailingslashit( get_template_directory() ) . 'languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -124,6 +124,8 @@ function kaka_scripts() {
 
 	wp_enqueue_script( 'kaka-navigation', trailingslashit( get_template_directory_uri() ) . 'js/navigation.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'kaka-theme', trailingslashit( get_template_directory_uri() ) . 'js/theme.js', array( 'jquery' ), '20180613', false  );
+
 	wp_enqueue_script( 'kaka-skip-link-focus-fix', trailingslashit( get_template_directory_uri() ) . 'js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -151,11 +153,6 @@ require trailingslashit( get_template_directory() ) . 'inc/template-functions.ph
  * Customizer additions.
  */
 require trailingslashit( get_template_directory() ) . 'inc/customizer.php';
-
-/**
- * Load Kaka theme functions.
- */
- require trailingslashit( get_template_directory() ) . 'inc/kaka-theme-functions.php';
 
 /**
  * Load Jetpack compatibility file.
