@@ -91,10 +91,17 @@ header {
             a {
               padding: 1.5rem 0;
             }
+
+            &:hover {
+              > ul.sub-menu {
+                display: block;
+              }
+            }
           }
 
           ul.sub-menu {
             background: $gray;
+            display: none;
             width: 100%;
 
             a {

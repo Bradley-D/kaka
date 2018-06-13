@@ -1181,8 +1181,11 @@ object {
         margin-left: 0; }
         header .header-container .main-navigation .nav-menu li a {
           padding: 1.5rem 0; }
+        header .header-container .main-navigation .nav-menu li:hover > ul.sub-menu {
+          display: block; }
       header .header-container .main-navigation .nav-menu ul.sub-menu {
         background: #f1f1f1;
+        display: none;
         width: 100%; }
         header .header-container .main-navigation .nav-menu ul.sub-menu a {
           color: #414141; }
