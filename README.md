@@ -10,6 +10,10 @@ Hi. I'm a starter theme called 'Kaka'. I try and keep nice and lean so there is 
 * A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
 * Licensed under GPLv2 or later. :) Use it to make something cool.
 
+Getting Started - SASS & Gulp
+----------------------------------
+Yep, SASS and Gulp are here to help. If you have Node.js and Gulp installed globally, `npm install` and `gulp` from within this theme folder will get your SASS compiled and minified.
+
 Getting Started - Name Change
 ----------------------------------
 
@@ -29,7 +33,7 @@ OR
 4. Search for: <code>&nbsp;kaka</code> and replace with: <code>&nbsp;Chocolate_Cake</code>
 5. Search for: `kaka-` and replace with: `chocolate-cake-`
 
-Then, update the stylesheet header in `style.css`, the links in `footer.php` with your own information and rename `kaka.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
+Then, update the stylesheet header in `style.css` and rename `kaka.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
 
 Credits
 ----------------------------------

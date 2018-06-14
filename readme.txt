@@ -45,8 +45,10 @@ They are placed in the template files and look like do_action( 'HOOK-NAME' ), yo
 - archive.php
 - index.php
 
+* Please note: archive.php and index.php use the same hooks.
+
 = How do you use the hooks =
-I suggest read the WordPress codex on how to use [add_action()](https://developer.wordpress.org/reference/functions/add_action/) and [remove_action()](https://developer.wordpress.org/reference/functions/remove_action/)
+I suggest you read the WordPress codex on how to use [add_action()](https://developer.wordpress.org/reference/functions/add_action/) and [remove_action()](https://developer.wordpress.org/reference/functions/remove_action/)
 
 = Does Kaka have documentation about the hooks? =
 Yes, there is more information at the [Kaka Wiki](https://github.com/Bradley-D/kaka/wiki)
