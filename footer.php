@@ -26,20 +26,14 @@
 				printf( esc_html__( 'Proudly powered by %s', 'kaka' ), 'WordPress' );
 				?>
 			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'kaka' ), 'kaka', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-				<?php
-				if ( function_exists( 'the_privacy_policy_link' ) ) :
-					the_privacy_policy_link( '<span class="sep"> | </span>', '' );
-				endif;
-				?>
+			<?php
+			if ( function_exists( 'the_privacy_policy_link' ) ) :
+				the_privacy_policy_link( '<span class="sep"> | </span>', '' );
+			endif; ?>
 		</div><!-- .site-info -->
 
 		<?php do_action( 'after_footer_content' ); ?>
-		
+
 	</footer><!-- #colophon -->
 
 	<?php do_action( 'after_footer' ); ?>

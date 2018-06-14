@@ -22,7 +22,7 @@
 		endif; ?>
 
 		<?php do_action( 'after_post_title' ); ?>
-		
+
 		<?php
 		if ( 'post' === get_post_type() ) :
 			?>

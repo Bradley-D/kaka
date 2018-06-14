@@ -15,7 +15,9 @@
 get_header();
 ?>
 
+
 	<div id="primary" class="content-area col span_8 clr">
+		<?php do_action( 'before_archive' ); ?>
 		<main id="main" class="site-main">
 
 		<?php
@@ -24,11 +26,16 @@ get_header();
 			if ( is_home() && ! is_front_page() ) :
 				?>
 				<header>
+					<?php do_action( 'before_archive_title' ); ?>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					<?php do_action( 'after_archive_title' );?>
 				</header>
 				<?php
-			endif;
+			endif; ?>
 
+			<?php do_action( 'before_archive_content' ); ?>
+
+			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -48,10 +55,12 @@ get_header();
 
 			get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
+		endif; ?>
+
+		<?php do_action( 'after_archive_content' ); ?>
 
 		</main><!-- #main -->
+		<?php do_action( 'after_archive' ); ?>
 	</div><!-- #primary -->
 
 <?php

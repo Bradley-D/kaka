@@ -1,0 +1,34 @@
+{
+  "name": "kaka",
+  "version": "1.0.0",
+  "description": "Kaka is an awesome WordPress starter theme to build cool things with",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bradley-D/kaka.git"
+  },
+  "keywords": [
+    "WordPress",
+    "theme",
+    "framework",
+    "underscores",
+    "starter-theme"
+  ],
+  "author": "Bradley Davis",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Bradley-D/kaka/issues"
+  },
+  "homepage": "https://github.com/Bradley-D/kaka#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}

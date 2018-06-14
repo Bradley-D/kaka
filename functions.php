@@ -27,7 +27,7 @@ if ( ! function_exists( 'kaka_setup' ) ) :
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 		// Add theme support for visual editor style with editor-style.css
-		add_editor_style();
+		add_editor_style( trailingslashit( get_template_directory_uri() ) . 'css/editor-style.css' );
 
 		/*
 		 * Let WordPress manage the document title.
@@ -121,20 +121,16 @@ add_action( 'widgets_init', 'kaka_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function kaka_scripts() {
-	wp_enqueue_style( 'kaka-style', trailingslashit( get_template_directory_uri() ) . 'dist/style.css' );
-
+function kaka_scripts_styles() {
+	wp_enqueue_style( 'kaka-style', trailingslashit( get_template_directory_uri() ) . 'css/style.min.css' );
 	wp_enqueue_script( 'kaka-navigation', trailingslashit( get_template_directory_uri() ) . 'js/navigation.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'kaka-theme', trailingslashit( get_template_directory_uri() ) . 'js/theme.js', array( 'jquery' ), '20180613', false  );
-
 	wp_enqueue_script( 'kaka-skip-link-focus-fix', trailingslashit( get_template_directory_uri() ) . 'js/skip-link-focus-fix.js', array(), '20151215', true );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'kaka_scripts' );
+add_action( 'wp_enqueue_scripts', 'kaka_scripts_styles' );
 
 /**
  * Implement the Custom Header feature.
