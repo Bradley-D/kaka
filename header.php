@@ -45,7 +45,7 @@
 				$kaka_description = get_bloginfo( 'description', 'display' );
 				if ( $kaka_description || is_customize_preview() ) :
 					?>
-					<p class="site-description"><?php echo $kaka_description; /* WPCS: xss ok. */ ?></p>
+					<p class="site-description"><?php echo esc_attr( $kaka_description ); ?></p>
 				<?php endif; ?>
 			</div><!-- .site-branding -->
 			<nav id="site-navigation" class="main-navigation col span_8 clr">

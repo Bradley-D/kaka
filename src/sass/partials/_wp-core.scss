@@ -36,6 +36,10 @@ li > ul {
 	margin-left: 1.64em;
 }
 
+dl {
+	@include font-content;
+}
+
 dt {
 	font-weight: bold;
 }
@@ -142,6 +146,7 @@ blockquote {
 }
 
 address {
+	@include font-content;
 	margin: 0 0 1.64em;
 }
 

@@ -12,13 +12,18 @@
 /*	MAIN CONTAINER
 	Set the width to whatever you want the width of your site to be. */
 .container {
-	max-width: $container;
 	margin: 0 auto;
-}
-
-.container-full {
-	max-width: $container-full;
+	padding-right: 15px;
+	padding-left: 15px;
+	max-width: $container;
 	width: 100%;
+
+	&.full-width {
+		padding-right: 0;
+		padding-left: 0;
+		max-width: $container-full;
+		width: 100%;
+	}
 }
 /*	SELF CLEARING FLOATS - CLEARFIX METHOD */
 .clr:after,

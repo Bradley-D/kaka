@@ -363,6 +363,11 @@ li > ul {
   margin-bottom: 0;
   margin-left: 1.64em; }
 
+dl {
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.64em; }
+
 dt {
   font-weight: bold; }
 
@@ -382,7 +387,7 @@ figure {
 table {
   border-spacing: 0;
   font-family: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.64em;
   margin: 0 0 1.64em;
@@ -461,12 +466,15 @@ blockquote {
   padding: 0 0 0 1.64rem; }
 
 address {
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.64em;
   margin: 0 0 1.64em; }
 
 pre {
   background: #f1f1f1;
   font-family: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.64em;
   padding: 1.64em;
@@ -480,7 +488,7 @@ kbd,
 tt,
 var {
   font-family: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.64em; }
 
@@ -1006,12 +1014,16 @@ object {
 /*	MAIN CONTAINER
 	Set the width to whatever you want the width of your site to be. */
 .container {
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
   max-width: 1140px;
-  margin: 0 auto; }
-
-.container-full {
-  max-width: 100%;
   width: 100%; }
+  .container.full-width {
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 100%;
+    width: 100%; }
 
 /*	SELF CLEARING FLOATS - CLEARFIX METHOD */
 .clr:after,
