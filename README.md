@@ -1,7 +1,7 @@
 Kaka
 ===
 
-Hi. I'm a starter theme called 'Kaka'. I try and keep nice and lean so there is less stuff to get in your way so you can build something awesome.
+Hi. I'm a starter theme called 'Kaka'. I try and keep nice and lean so there is less stuff to get in your way and you can build something awesome.
 
 * A just right amount of lean, well-commented, modern, HTML5 templates.
 * A helpful 404 template.

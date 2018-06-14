@@ -8,7 +8,7 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Hi. I'm a responsive WordPress starter theme called 'Kaka'. I try and keep nice and lean so there is less stuff to get in your way so you can build something awesome.
+Hi. I'm a responsive WordPress starter theme called 'Kaka'. I try and keep nice and lean so there is less stuff to get in your way and you can build something awesome.
 
 == Description ==
 
