@@ -5,4 +5,5 @@
  *
  */
 ( function( $ ) {
+  // You can write some awesome jQuery here
 } )( jQuery );
