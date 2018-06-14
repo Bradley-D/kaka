@@ -61,8 +61,8 @@ Yes, there is more information at the [Kaka Wiki](https://github.com/Bradley-D/k
 
 == Changelog ==
 
-= 1.0 - June 14 2018 =
+= 1.0.0 - June 14 2018 =
 * Initial release to the world.
 
-= 0.* -  June 12 2018
+= 0.*.* -  June 12 2018
 * Initial top secret build behind the scenes before release.
