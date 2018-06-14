@@ -26,6 +26,8 @@ if ( ! function_exists( 'kaka_setup' ) ) :
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
+		// Add theme support for visual editor style with editor-style.css
+		add_editor_style();
 
 		/*
 		 * Let WordPress manage the document title.
@@ -137,7 +139,7 @@ add_action( 'wp_enqueue_scripts', 'kaka_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-require trailingslashit( get_template_directory() ) . 'inc/custom-header.php';
+//require trailingslashit( get_template_directory() ) . 'inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
