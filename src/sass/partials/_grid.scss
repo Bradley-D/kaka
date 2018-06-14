@@ -13,8 +13,8 @@
 	Set the width to whatever you want the width of your site to be. */
 .container {
 	margin: 0 auto;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: $container-gutter;
+	padding-left: $container-gutter;
 	max-width: $container;
 	width: 100%;
 

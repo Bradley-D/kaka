@@ -30,7 +30,7 @@ header {
           line-height: 52px;
           padding: 0;
           position: absolute;
-          right: 0;
+          right: $container-gutter;
           width: 100px;
           transition: 0.25s ease-in-out;
           z-index: 100;
