@@ -4,7 +4,7 @@ Contributors: Bradley Davis
 Tags: two-columns, right-sidebar, editor-style, custom-background, custom-logo, custom-menu, featured-images, sticky-post, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 4.8
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,6 +60,9 @@ Yes, there is more information at the [Kaka Wiki](https://github.com/Bradley-D/k
 * Responsive Grid System, http://responsive.gs, Denis Leblanc, [MIT](https://opensource.org/licenses/MIT)
 
 == Changelog ==
+
+= 1.0.1 - June 22 2018 =
+* Header tag conditional simplified
 
 = 1.0.0 - June 14 2018 =
 * Initial release to the world.
