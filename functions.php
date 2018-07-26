@@ -136,7 +136,7 @@ add_action( 'wp_enqueue_scripts', 'kaka_scripts_styles' );
 /**
  * Implement the Custom Header feature.
  */
-//require trailingslashit( get_template_directory() ) . 'inc/custom-header.php';
+require trailingslashit( get_template_directory() ) . 'inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
