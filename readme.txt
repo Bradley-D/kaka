@@ -1,7 +1,7 @@
 === Kaka ===
 
 Contributors: Bradley Davis
-Tags: two-columns, right-sidebar, editor-style, custom-background, custom-logo, custom-menu, featured-images, sticky-post, threaded-comments, translation-ready
+Tags: blog, photography, portfolio, two-columns, right-sidebar, editor-style, custom-background, custom-logo, custom-menu, featured-images, sticky-post, threaded-comments, custom-header
 Requires at least: 4.5
 Tested up to: 4.8
 Stable tag: 1.0.1
@@ -9,6 +9,9 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Hi. I'm a responsive WordPress starter theme called 'Kaka'. I try and keep nice and lean so there is less stuff to get in your way and you can build something awesome.
+
+Kaka WordPress Theme, Copyright (C) 2018, Bradley Davis
+Kaka is distributed under the terms of the GNU GPL
 
 == Description ==
 
@@ -59,7 +62,12 @@ Yes, there is more information at the [Kaka Wiki](https://github.com/Bradley-D/k
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
 * Responsive Grid System, http://responsive.gs, Denis Leblanc, [MIT](https://opensource.org/licenses/MIT)
 
+Image used in screenshot.png: A photo by Snapwire (https://www.pexels.com/photo/assorted-hot-air-balloons-photo-during-sunset-670061/), licensed under Creative Commons Zero (http://creativecommons.org/publicdomain/zero/1.0/)
+
 == Changelog ==
+
+= 1.0.2 - August 2 2018 =
+* Theme review fixes
 
 = 1.0.1 - June 22 2018 =
 * Header tag conditional simplified
