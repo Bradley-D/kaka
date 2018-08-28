@@ -66,6 +66,9 @@ Image used in screenshot.png: A photo by Snapwire (https://www.pexels.com/photo/
 
 == Changelog ==
 
+= 1.0.3 - August 2 2018 =
+* No sidebar template added for page and post type
+
 = 1.0.2 - August 2 2018 =
 * Theme review fixes
 
