@@ -3,8 +3,8 @@
 Contributors: Bradley Davis
 Tags: blog, photography, portfolio, two-columns, right-sidebar, editor-style, custom-background, custom-logo, custom-menu, featured-images, sticky-post, threaded-comments, custom-header
 Requires at least: 4.5
-Tested up to: 4.8
-Stable tag: 1.0.1
+Tested up to: 4.9.8
+Stable tag: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
