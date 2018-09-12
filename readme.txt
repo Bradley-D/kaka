@@ -78,7 +78,7 @@ Image used in screenshot.png: A photo by Snapwire (https://www.pexels.com/photo/
 
 == Changelog ==
 
-= 1.0.3 - August 2 2018 =
+= 1.0.3 - September 12 2018 =
 * No sidebar template added for page and post type.
 * Additional FAQs added around feature image size and position.
 
