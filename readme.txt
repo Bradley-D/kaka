@@ -36,6 +36,18 @@ Page layouts consist of a content area (66% desktop width, 100% mobile width) an
 
 == Frequently Asked Questions ==
 
+= What image size do you recommend for the feature image =
+Try and use images that are 1500px wide or larger, but keep the file size down or if you use a lossless file type like a png, you might be able to use a smaller image. Experiment!
+
+= Why are my feature images blurry =
+The image probably was not wide enough when initially uploaded. Remember the image covers the entire width of the screen so if you upload an image at 1040px and view on a 29 inch monitor, chances are it will be blurry.
+
+= Why can't I see all the feature image =
+The feature image (if unmodified) is 300px in height, I suggest the focus point of the image be
+
+= How are the feature image positioned =
+The feature image is positioned 50% or centre (vertically) and centre (horizontally) or 50%. Please take this into consideration when cropping your images.
+
 = Where do I find the hooks in the theme =
 They are placed in the template files and look like do_action( 'HOOK-NAME' ), you fill find them in the following files:
 - header.php
@@ -67,13 +79,14 @@ Image used in screenshot.png: A photo by Snapwire (https://www.pexels.com/photo/
 == Changelog ==
 
 = 1.0.3 - August 2 2018 =
-* No sidebar template added for page and post type
+* No sidebar template added for page and post type.
+* Additional FAQs added around feature image size and position.
 
 = 1.0.2 - August 2 2018 =
-* Theme review fixes
+* Theme review fixes.
 
 = 1.0.1 - June 22 2018 =
-* Header tag conditional simplified
+* Header tag conditional simplified.
 
 = 1.0.0 - June 14 2018 =
 * Initial release to the world.
