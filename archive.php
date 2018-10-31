@@ -49,7 +49,8 @@ get_header();
 
 			get_template_part( 'template-parts/content', 'none' );
 
-		endif; ?>
+		endif;
+		?>
 
 		<?php do_action( 'after_archive_content' ); ?>
 

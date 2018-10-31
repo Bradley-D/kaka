@@ -33,12 +33,14 @@
 			<div class="site-branding col span_4 clr">
 				<?php
 				the_custom_logo();
-				$kaka_header_tag = ( is_front_page() ? 'h1' : 'p'); ?>
-				<<?php echo esc_attr ($kaka_header_tag ); ?> class="site-title">
+				$kaka_header_tag = ( is_front_page() ? 'h1' : 'p' );
+				?>
+				<<?php echo esc_attr( $kaka_header_tag ); ?> class="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<?php bloginfo( 'name' ); ?>
 					</a>
-				</<?php echo esc_attr ($kaka_header_tag ); ?> > <?php
+				</<?php echo esc_attr( $kaka_header_tag ); ?> >
+				<?php
 
 				$kaka_description = get_bloginfo( 'description', 'display' );
 				if ( $kaka_description || is_customize_preview() ) :
@@ -49,10 +51,12 @@
 			<nav id="site-navigation" class="main-navigation col span_8 clr">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="hamburger-text"><?php esc_html_e( 'Menu', 'kaka' ); ?></span><span class="hamburger"></span></button>
 				<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
 				?>
 			</nav><!-- #site-navigation -->
 		</div><!-- #header-container  -->

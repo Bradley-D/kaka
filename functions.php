@@ -1,10 +1,10 @@
 <?php
 /**
- * kaka functions and definitions
+ * Kaka functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package kaka
+ * @package Kaka
  */
 
 if ( ! function_exists( 'kaka_setup' ) ) :
@@ -26,7 +26,7 @@ if ( ! function_exists( 'kaka_setup' ) ) :
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
-		// Add theme support for visual editor style with editor-style.css
+		// Add theme support for visual editor style with editor-style.css.
 		add_editor_style( trailingslashit( get_template_directory_uri() ) . 'css/editor-style.css' );
 
 		/*
@@ -45,27 +45,38 @@ if ( ! function_exists( 'kaka_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'kaka' ),
-		) );
+		register_nav_menus(
+			array(
+				'menu-1' => esc_html__( 'Primary', 'kaka' ),
+			)
+		);
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+		add_theme_support(
+			'html5',
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			)
+		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'kaka_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
+		add_theme_support(
+			'custom-background',
+			apply_filters(
+				'kaka_custom_background_args',
+				array(
+					'default-color' => 'ffffff',
+					'default-image' => '',
+				)
+			)
+		);
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -75,12 +86,15 @@ if ( ! function_exists( 'kaka_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		) );
+		add_theme_support(
+			'custom-logo',
+			array(
+				'height'      => 250,
+				'width'       => 250,
+				'flex-width'  => true,
+				'flex-height' => true,
+			)
+		);
 	}
 endif;
 add_action( 'after_setup_theme', 'kaka_setup' );
@@ -106,15 +120,17 @@ add_action( 'after_setup_theme', 'kaka_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function kaka_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'kaka' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'kaka' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar', 'kaka' ),
+			'id'            => 'sidebar-1',
+			'description'   => esc_html__( 'Add widgets here.', 'kaka' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 add_action( 'widgets_init', 'kaka_widgets_init' );
 
@@ -122,7 +138,7 @@ add_action( 'widgets_init', 'kaka_widgets_init' );
  * Enqueue scripts and styles.
  */
 function kaka_scripts_styles() {
-	wp_enqueue_style( 'kaka-min-style', trailingslashit( get_template_directory_uri() ) . 'css/style.min.css' );
+	wp_enqueue_style( 'kaka-min-style', trailingslashit( get_template_directory_uri() ) . 'css/style.min.css', array(), '1.0', 'all' );
 	wp_enqueue_style( 'kaka-style', get_stylesheet_uri(), array(), '1.0', 'all' );
 	wp_enqueue_script( 'kaka-navigation', trailingslashit( get_template_directory_uri() ) . 'js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'kaka-skip-link-focus-fix', trailingslashit( get_template_directory_uri() ) . 'js/skip-link-focus-fix.js', array(), '20151215', true );
