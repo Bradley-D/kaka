@@ -143,8 +143,8 @@ if ( ! function_exists( 'kaka_setup' ) ) :
 					'slug'      => 'large'
 				),
 				array(
-					'name'      => __( 'larger', 'themeLangDomain' ),
-					'shortName' => __( 'XL', 'themeLangDomain' ),
+					'name'      => __( 'larger', 'kaka' ),
+					'shortName' => __( 'XL', 'kaka' ),
 					'size'      => 50,
 					'slug'      => 'larger'
 				)
