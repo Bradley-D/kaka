@@ -75,12 +75,143 @@ if ( ! function_exists( 'kaka_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		) );
+		add_theme_support( 'custom-logo',
+			array(
+				'height'      => 250,
+				'width'       => 250,
+				'flex-width'  => true,
+				'flex-height' => true,
+			) 
+		);
+
+		/**
+		 * Gutenberg: Default block styles.
+		 *
+		 * @since 1.0.4
+		 * @link  https://wordpress.org/gutenberg/handbook/extensibility/theme-support/#default-block-styles
+		 */
+		add_theme_support( 'wp-block-styles' );
+
+		/**
+		 * Gutenberg: Wide align images.
+		 *
+		 * @since 1.0.4
+		 * @link  https://wordpress.org/gutenberg/handbook/extensibility/theme-support/#wide-alignment
+		 */
+		add_theme_support( 'align-wide' );
+
+		/**
+		 * Gutenberg: Responsive embedded content.
+		 *
+		 * @since 1.0.4
+		 * @link  https://wordpress.org/gutenberg/handbook/extensibility/theme-support/#responsive-embedded-content
+		 */
+		add_theme_support( 'responsive-embeds' );
+
+		/**
+		 * Gutenberg: Editor styles.
+		 *
+		 * @since 1.0.4
+		 * @link  https://wordpress.org/gutenberg/handbook/extensibility/theme-support/#editor-styles
+		 */
+		add_theme_support( 'editor-styles' );
+		
+		/**
+		 * Gutenberg: Block font size.
+		 *
+		 * @since 1.0.4
+		 * @link  https://wordpress.org/gutenberg/handbook/extensibility/theme-support/#block-font-sizes
+		 */
+		add_theme_support( 'editor-font-sizes',
+			array(
+				array(
+					'name'      => __( 'small', 'kaka' ),
+					'shortName' => __( 'S', 'kaka' ),
+					'size'      => 12,
+					'slug'      => 'small'
+				),
+				array(
+					'name'      => __( 'regular', 'kaka' ),
+					'shortName' => __( 'M', 'kaka' ),
+					'size'      => 16,
+					'slug'      => 'regular'
+				),
+				array(
+					'name'      => __( 'large', 'kaka' ),
+					'shortName' => __( 'L', 'kaka' ),
+					'size'      => 36,
+					'slug'      => 'large'
+				),
+				array(
+					'name'      => __( 'larger', 'themeLangDomain' ),
+					'shortName' => __( 'XL', 'themeLangDomain' ),
+					'size'      => 50,
+					'slug'      => 'larger'
+				)
+			)
+		);
+
+		 /**
+		 * Gutenberg: Block Color Palettes.
+		 *
+		 * @since 1.0.4
+		 * @link  https://wordpress.org/gutenberg/handbook/extensibility/theme-support/#block-color-palettes
+		 */
+		add_theme_support( 'editor-color-palette',
+			array(
+				array(
+					'name'  => __( 'Dark Blue', 'kaka' ),
+					'slug'  => 'dark-blue',
+					'color' => '#0073AA',
+				),
+				array(
+					'name'  => __( 'Medium Blue', 'kaka' ),
+					'slug'  => 'medium-blue',
+					'color' => '#00A0D2',
+				),
+				array(
+					'name'  => __( 'Pink Purple', 'kaka' ),
+					'slug'  => 'pink-blue',
+					'color' => '#96588A',
+				),
+				array(
+					'name'  => __( 'Blue Purple', 'kaka' ),
+					'slug'  => 'pink-blue',
+					'color' => '#826EB4',
+				),
+				array(
+					'name'  => __( 'Ultra Dark Gray', 'kaka' ),
+					'slug'  => 'ultra-dark-gray',
+					'color' => '#191E23',
+				),
+				array(
+					'name'  => __( 'Dark Gray', 'kaka' ),
+					'slug'  => 'dark-gray',
+					'color' => '#23282D',
+				),
+				array(
+					'name'  => __( 'Base Gray', 'kaka' ),
+					'slug'  => 'base-gray',
+					'color' => '#32373C',
+				),
+
+				array(
+					'name'  => __( 'Dark Silver Gray', 'kaka' ),
+					'slug'  => 'dark-silver-gray',
+					'color' => '#82878C',
+				),
+				array(
+					'name'  => __( 'Silver Gray', 'kaka' ),
+					'slug'  => 'silver-gray',
+					'color' => '#A0A5AA',
+				),
+				array(
+					'name'  => __( 'Light Silver Gray', 'kaka' ),
+					'slug'  => 'light-silver-gray',
+					'color' => '#B4B9BE',
+				),
+			)
+		);
 	}
 endif;
 add_action( 'after_setup_theme', 'kaka_setup' );
