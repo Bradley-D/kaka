@@ -4,7 +4,7 @@ Contributors: Bradley Davis
 Tags: blog, photography, portfolio, two-columns, right-sidebar, editor-style, custom-background, custom-logo, custom-menu, featured-images, sticky-post, threaded-comments, custom-header
 Requires at least: 4.5
 Tested up to: 4.9.9
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,6 +77,9 @@ Yes, there is more information at the [Kaka Wiki](https://github.com/Bradley-D/k
 Image used in screenshot.png: A photo by Snapwire (https://www.pexels.com/photo/assorted-hot-air-balloons-photo-during-sunset-670061/), licensed under Creative Commons Zero (http://creativecommons.org/publicdomain/zero/1.0/)
 
 == Changelog ==
+
+= 1.0.5 - November 27 2018 =
+* Text domain update on Gutenberg theme support
 
 = 1.0.4 - November 27 2018 =
 * Gutenberg support for default block styles
