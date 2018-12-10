@@ -1,183 +1,184 @@
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+
 html {
-	font-size: $font-size-base;
+    font-size: $font-size-base;
 }
 
 body {
-	@include font-base;
+    @include font-base;
 }
 
 hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.64em;
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.64em;
 }
 
 ol,
 ul {
-	@include font-content;
-	margin: 0 0 1.64rem;
+    @include font-content;
+    margin: 0 0 1.64rem;
 }
 
 ul {
-	list-style: disc;
+    list-style: disc;
 }
 
 ol {
-	list-style: decimal;
+    list-style: decimal;
 }
 
-li > ol,
-li > ul {
-	margin-bottom: 0;
-	margin-left: 1.64em;
+li>ol,
+li>ul {
+    margin-bottom: 0;
+    margin-left: 1.64em;
 }
 
 dl {
-	@include font-content;
+    @include font-content;
 }
 
 dt {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 dd {
-	margin: 0 1.64em 1.64em;
+    margin: 0 1.64em 1.64em;
 }
 
 img {
-	height: auto;
-	/* Make sure images are scaled correctly. */
-	max-width: 100%;
-	/* Adhere to container width. */
+    height: auto;
+    /* Make sure images are scaled correctly. */
+    max-width: 100%;
+    /* Adhere to container width. */
 }
 
 figure {
-	margin: 1em 0;
-	/* Extra wide images within figure tags don't overflow the content area. */
+    margin: 1em 0;
+    /* Extra wide images within figure tags don't overflow the content area. */
 }
 
 table {
-	border-spacing: 0;
-	@include table-font;
-	margin: 0 0 1.64em;
-	width: 100%;
-
-	td,
-	th {
-		border-bottom: 1px solid $gray;
-		padding: 0.2rem;
-	}
+    border-spacing: 0;
+    @include table-font;
+    margin: 0 0 1.64em;
+    width: 100%;
+    td,
+    th {
+        border-bottom: 1px solid $gray;
+        padding: 0.2rem;
+    }
 }
+
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	clear: both;
-	@include hx-content;
+    clear: both;
+    @include hx-content;
 }
 
 .h1,
 h1 {
-	font-size: $h1;
+    font-size: $h1;
 }
 
 .h2,
 h2 {
-	font-size: $h2;
-
-	&.widget-title {
-		@include widget-title;
-	}
+    font-size: $h2;
+    &.widget-title {
+        @include widget-title;
+    }
 }
 
 .h3,
 h3 {
-	font-size: $h3;
+    font-size: $h3;
 }
 
 .h4,
 h4 {
-	font-size: $h4;
+    font-size: $h4;
 }
 
 .h5,
 h5 {
-	font-size: $h5;
+    font-size: $h5;
 }
 
 .h6,
 h6 {
-	font-size: $h6;
+    font-size: $h6;
 }
 
 .entry-title {
-	@include entry-title;
-
-	a {
-		text-decoration: none;
-	}
+    @include entry-title;
+    a {
+        text-decoration: none;
+    }
 }
 
 p {
-	@include font-content;
-	margin-bottom: 1.64em;
+    @include font-content;
+    margin-bottom: 1.64em;
 }
 
 cite,
 dfn,
 em,
 i {
-	font-style: italic;
+    font-style: italic;
 }
 
 blockquote {
-	border-left: 5px solid $text-black;
-	margin: 0 0 1.64rem;
-	padding: 0 0 0 1.64rem;
+    border-left: 5px solid $text-black;
+    margin: 0 0 1.64rem;
+    padding: 0 0 0 1.64rem;
 }
 
 address {
-	@include font-content;
-	margin: 0 0 1.64em;
+    @include font-content;
+    margin: 0 0 1.64em;
 }
 
 pre {
-	@include font-pre;
-	margin-bottom: 1.64em;
-	max-width: 100%;
-	overflow: auto;
+    @include font-pre;
+    margin-bottom: 1.64em;
+    max-width: 100%;
+    overflow: auto;
 }
 
 code,
 kbd,
 tt,
 var {
-	@include font-code;
+    @include font-code;
 }
 
 abbr,
 acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
+    border-bottom: 1px dotted #666;
+    cursor: help;
 }
 
 ins,
 mark {
-	background: #fff9c0;
-	text-decoration: none;
+    background: #fff9c0;
+    text-decoration: none;
 }
 
 big {
-	font-size: 125%;
+    font-size: 125%;
 }
 
 button,
@@ -185,24 +186,27 @@ input,
 optgroup,
 select,
 textarea {
-	color: #404040;
-	@include font-content;
+    color: #404040;
+    @include font-content;
 }
+
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	@include form-button;
+    @include form-button;
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	@include form-button-hover;
+    @include form-button-hover;
 }
 
 button:active,
@@ -213,7 +217,7 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-	@include form-button-active-focus;
+    @include form-button-active-focus;
 }
 
 input[type="text"],
@@ -232,7 +236,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	@include form-input-textarea;
+    @include form-input-textarea;
 }
 
 input[type="text"]:focus,
@@ -251,339 +255,357 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: $black;
+    color: $black;
 }
 
 select {
-	border: 1px solid $gray;
+    border: 1px solid $gray;
 }
 
 textarea {
-	width: 100%;
+    width: 100%;
 }
+
+
 /*--------------------------------------------------------------
 ## Structure
 --------------------------------------------------------------*/
+
+
 /*--------------------------------------------------------------
 ## Structure - Header
 --------------------------------------------------------------*/
+
 header:not(.entry-header) {
-	border-bottom: 1px solid $gray;
-	padding: 1.5rem 0;
-
-	.header-container {
-		@media (min-width : $screen-md) {
-			display: flex;
-			align-items: center;
-		}
-
-		.site-branding {
-			.site-title {
-				color: $text-black;
-				font-size: $h2;
-				font-weight: bold;
-				line-height: 1em;
-				margin: 0;
-				text-transform: uppercase;
-
-				a {
-					text-decoration: none;
-				}
-			}
-
-			.site-description {
-				color: $text-gray;
-				font-size: 1.64rem;
-				margin: 0;
-				text-transform: uppercase;
-			}
-		}
-	}
+    border-bottom: 1px solid $gray;
+    padding: 1.5rem 0;
+    .header-container {
+        @media (min-width: $screen-md) {
+            display: flex;
+            align-items: center;
+        }
+        .site-branding {
+            .site-title {
+                color: $text-black;
+                font-size: $h2;
+                font-weight: bold;
+                line-height: 1em;
+                margin: 0;
+                text-transform: uppercase;
+                a {
+                    text-decoration: none;
+                }
+            }
+            .site-description {
+                color: $text-gray;
+                font-size: 1.64rem;
+                margin: 0;
+                text-transform: uppercase;
+            }
+        }
+    }
 }
+
+
 /*--------------------------------------------------------------
 ## Structure - Primary
 --------------------------------------------------------------*/
+
 .site-content {
-	padding-top: 3rem;
-
-	article {
-		&.sticky {
-			display: block;
-		}
-
-		&.hentry {
-			margin: 0 0 3rem;
-		}
-
-		.entry-meta {
-			@include entry-meta;
-		}
-
-		.entry-footer {
-			@include entry-footer;
-
-			.cat-links,
-			.tags-links {
-				margin-right: 1.64rem;
-			}
-		}
-	}
+    padding-top: 3rem;
+    article {
+        &.sticky {
+            display: block;
+        }
+        &.hentry {
+            margin: 0 0 3rem;
+        }
+        .entry-meta {
+            @include entry-meta;
+        }
+        .entry-footer {
+            @include entry-footer;
+            .cat-links,
+            .tags-links {
+                margin-right: 1.64rem;
+            }
+        }
+    }
 }
 
 .updated:not(.published) {
-	display: none;
+    display: none;
 }
 
 .entry-content,
 .entry-summary,
 .page-content {
-	margin: 1.5em 0 0;
+    margin: 1.5em 0 0;
 }
 
 .page-links {
-	clear: both;
-	margin: 0 0 1.64em;
+    clear: both;
+    margin: 0 0 1.64em;
 }
+
+
 /*--------------------------------------------------------------
 ## Structure - Sidebar + Widgets
 --------------------------------------------------------------*/
-.widget {
-	ul {
-		list-style: none;
-		padding-left: 0;
-	}
 
-	a {
-		color: $text-black;
-	}
+.widget {
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    a {
+        color: $text-black;
+    }
 }
+
+
 /*--------------------------------------------------------------
 ## Structure - Footer
 --------------------------------------------------------------*/
+
 footer:not(.entry-footer) {
-	background-color: $white;
-	border-top: 1px solid $gray;
-	color: $black;
-	margin-top: 3rem;
-	padding: 3rem 0;
-
-	.site-info {
-		font-size: 1.64rem;
-	}
-
-	a {
-		color: $black;
-	}
+    background-color: $white;
+    border-top: 1px solid $gray;
+    color: $black;
+    margin-top: 3rem;
+    padding: 3rem 0;
+    .site-info {
+        font-size: 1.64rem;
+    }
+    a {
+        color: $black;
+    }
 }
+
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
+
 a {
-	color: $link;
+    color: $link;
 }
 
 a:visited {
-	color: $link-visited;
+    color: $link-visited;
 }
 
 a:active,
 a:focus,
 a:hover {
-	color: $link-active-focus-hover;
+    color: $link-active-focus-hover;
 }
 
 a:focus {
-	color: $gray;
-	outline: thin dotted;
+    color: $gray;
+    outline: thin dotted;
 }
 
 a:active,
 a:hover {
-	outline: 0;
+    outline: 0;
 }
+
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+
 .main-navigation {
-	display: block;
-	float: left;
-	width: 100%;
-
-	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-		@media screen and (min-width: $screen-md) {
-			display: block;
-			float: right;
-		}
-
-		li {
-			margin-left: 1.64rem;
-			position: relative;
-			text-transform: uppercase;
-			@media screen and (min-width: $screen-md) {
-				float: left;
-			}
-
-			ul {
-				width: 200px;
-
-				li {
-					margin-left: 0;
-					padding: 0.25rem 0.8rem;
-					width: 100%;
-
-					&:hover {
-						background: $gray;
-
-						& > a {
-							color: $text-black;
-						}
-					}
-				}
-
-				a {
-					color: $white;
-				}
-			}
-		}
-	}
-
-	a {
-		display: block;
-		font-size: 1.64rem;
-		text-decoration: none;
-	}
+    display: block;
+    float: left;
+    width: 100%;
+    ul {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        @media screen and (min-width: $screen-md) {
+            display: block;
+            float: right;
+        }
+        li {
+            margin-left: 1.64rem;
+            position: relative;
+            text-transform: uppercase;
+            @media screen and (min-width: $screen-md) {
+                float: left;
+            }
+            ul {
+                width: 200px;
+                li {
+                    margin-left: 0;
+                    padding: 0.25rem 0.8rem;
+                    width: 100%;
+                    &:hover {
+                        background: $gray;
+                        &>a {
+                            color: $text-black;
+                        }
+                    }
+                }
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+    a {
+        display: block;
+        font-size: 1.64rem;
+        text-decoration: none;
+    }
 }
 
 .main-navigation ul ul {
-	position: initial;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-	@media (min-width : $screen-md) {
-		background: $black;
-		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-		float: left;
-		position: absolute;
-	}
+    position: initial;
+    top: 100%;
+    left: -999em;
+    z-index: 99999;
+    @media (min-width: $screen-md) {
+        background: $black;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        float: left;
+        position: absolute;
+    }
 }
 
 .main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
+    left: -999em;
+    top: 0;
 }
 
-.main-navigation ul ul li.focus > ul,
-.main-navigation ul ul li:hover > ul {
-	left: 100%;
+.main-navigation ul ul li.focus>ul,
+.main-navigation ul ul li:hover>ul {
+    left: 100%;
 }
 
-.main-navigation ul li.focus > ul,
-.main-navigation ul li:hover > ul {
-	left: auto;
+.main-navigation ul li.focus>ul,
+.main-navigation ul li:hover>ul {
+    left: auto;
 }
+
+
 /* Small menu. */
+
 .main-navigation.toggled ul,
 .menu-toggle {
-	display: block;
+    display: block;
 }
+
 @media screen and (min-width: $screen-md) {
-	.menu-toggle {
-		display: none;
-	}
+    .menu-toggle {
+        display: none;
+    }
 }
 
 .site-main .comment-navigation,
 .site-main .post-navigation,
 .site-main .posts-navigation {
-	margin: 0 0 1.5em;
-	overflow: hidden;
+    margin: 0 0 1.5em;
+    overflow: hidden;
 }
 
 .comment-navigation .nav-previous,
 .post-navigation .nav-previous,
 .posts-navigation .nav-previous {
-	@include font-content;
-	float: left;
-	width: 50%;
+    @include font-content;
+    float: left;
+    width: 50%;
 }
 
 .comment-navigation .nav-next,
 .post-navigation .nav-next,
 .posts-navigation .nav-next {
-	@include font-content;
-	float: right;
-	text-align: right;
-	width: 50%;
+    @include font-content;
+    float: right;
+    text-align: right;
+    width: 50%;
 }
+
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
+
+
 /* Text meant only for screen readers. */
+
 .screen-reader-text {
-	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute !important;
-	width: 1px;
-	word-wrap: normal !important;
-	/* Many screen reader and browser combinations announce broken words as they would appear visually. */
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
 .screen-reader-text:focus {
-	background-color: $gray;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	clip-path: none;
-	color: #21759b;
-	display: block;
-	@include font-content;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000;
-	/* Above WP toolbar. */
+    background-color: $gray;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    @include font-content;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
 }
+
+
 /* Do not show the outline on the skip link target. */
+
 #content[tabindex="-1"]:focus {
-	outline: 0;
+    outline: 0;
 }
+
+
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
+
 .alignleft {
-	display: inline;
-	float: left;
-	margin-right: 1.5em;
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
 }
 
 .alignright {
-	display: inline;
-	float: right;
-	margin-left: 1.5em;
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
 }
 
 .aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
+
 .clear:after,
 .clear:before,
 .comment-content:after,
@@ -596,9 +618,9 @@ a:hover {
 .site-footer:before,
 .site-header:after,
 .site-header:before {
-	content: "";
-	display: table;
-	table-layout: fixed;
+    content: "";
+    display: table;
+    table-layout: fixed;
 }
 
 .clear:after,
@@ -607,136 +629,312 @@ a:hover {
 .site-content:after,
 .site-footer:after,
 .site-header:after {
-	clear: both;
+    clear: both;
 }
+
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+
 .widget {
-	margin: 0 0 1.5em;
-	/* Make sure select elements fit in widgets. */
+    margin: 0 0 1.5em;
+    /* Make sure select elements fit in widgets. */
 }
 
 .widget select {
-	max-width: 100%;
+    max-width: 100%;
 }
+
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+
 .comment-content a {
-	word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .bypostauthor {
-	display: block;
+    display: block;
 }
+
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
+
+
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
+
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
-	/* Theme Footer (when set to scrolling) */
-	display: none;
+    /* Theme Footer (when set to scrolling) */
+    display: none;
 }
+
+
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+
 .infinity-end.neverending .site-footer {
-	display: block;
+    display: block;
 }
+
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
+
 .comment-content .wp-smiley,
 .entry-content .wp-smiley,
 .page-content .wp-smiley {
-	border: none;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 0;
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
 }
+
+
 /* Make sure embeds and iframes fit their containers. */
+
 embed,
 iframe,
 object {
-	max-width: 100%;
+    max-width: 100%;
 }
+
+
 /* Make sure logo link wraps around logo image. */
+
 .custom-logo-link {
-	display: inline-block;
+    display: inline-block;
 }
+
+
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
+
 .wp-caption {
-	margin-bottom: 1.5em;
-	max-width: 100%;
+    margin-bottom: 1.5em;
+    max-width: 100%;
 }
 
 .wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
+    margin: 0.8075em 0;
 }
 
 .wp-caption-text {
-	text-align: center;
+    text-align: center;
 }
+
+
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
+
 .gallery {
-	margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .gallery-item {
-	display: inline-block;
-	text-align: center;
-	vertical-align: top;
-	width: 100%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
 }
 
 .gallery-columns-2 .gallery-item {
-	max-width: 50%;
+    max-width: 50%;
 }
 
 .gallery-columns-3 .gallery-item {
-	max-width: 33.33%;
+    max-width: 33.33%;
 }
 
 .gallery-columns-4 .gallery-item {
-	max-width: 25%;
+    max-width: 25%;
 }
 
 .gallery-columns-5 .gallery-item {
-	max-width: 20%;
+    max-width: 20%;
 }
 
 .gallery-columns-6 .gallery-item {
-	max-width: 16.66%;
+    max-width: 16.66%;
 }
 
 .gallery-columns-7 .gallery-item {
-	max-width: 14.28%;
+    max-width: 14.28%;
 }
 
 .gallery-columns-8 .gallery-item {
-	max-width: 12.5%;
+    max-width: 12.5%;
 }
 
 .gallery-columns-9 .gallery-item {
-	max-width: 11.11%;
+    max-width: 11.11%;
 }
 
 .gallery-caption {
-	display: block;
+    display: block;
+}
+
+
+/*--------------------------------------------------------------
+# Gutenberg
+--------------------------------------------------------------*/
+/* Font Size */
+.has-small-font-size {
+    font-size: $small;
+}
+
+.has-regular-font-size {
+    font-size: $normal;
+}
+
+.has-large-font-size {
+    font-size: $large;
+}
+
+.has-larger-font-size {
+    font-size: $larger;
+}
+
+/* Color Palate  - Background */
+.has-white-background-color {
+    background-color: $white;
+}
+
+.has-black-blue-background-color {
+    background-color: $black;
+}
+
+.has-dark-blue-background-color {
+    background-color: $gu-dark-blue;
+}
+
+.has-medium-blue-background-color {
+    background-color: $gu-medium-blue;
+}
+
+.has-ultra-dark-gray-background-color {
+    background-color: $gu-ultra-dark-gray;
+}
+
+.has-dark-gray-background-color {
+    background-color: $gu-dark-gray;
+}
+
+.has-base-gray-background-color {
+    background-color: $gu-base-gray;
+}
+
+.has-dark-silver-gray-background-color {
+    background-color: $gu-dark-silver-gray;
+}
+
+.has-silver-gray-background-color {
+    background-color: $gu-silver-gray;
+}
+
+.has-light-silver-gray-background-color {
+    background-color: $gu-light-silver-gray;
+}
+
+.has-red-background-color {
+    background-color: $gu-red;
+}
+
+.has-orange-background-color {
+    background-color: $gu-orange;
+}
+
+.has-yellow-background-color {
+    background-color: $gu-yellow;
+}
+
+.has-green-background-color {
+    background-color: $gu-green;
+}
+
+.has-purple-background-color {
+    background-color: $gu-purple;
+}
+
+/* Color Palate  - Font Color */
+.has-white-color {
+    color: $white;
+}
+
+.has-black-blue-color {
+    color: $black;
+}
+
+.has-dark-blue-color {
+    color: $gu-dark-blue;
+}
+
+.has-medium-blue-color {
+    color: $gu-medium-blue;
+}
+
+.has-ultra-dark-gray-color {
+    color: $gu-ultra-dark-gray;
+}
+
+.has-dark-gray-color {
+    color: $gu-dark-gray;
+}
+
+.has-base-gray-color {
+    color: $gu-base-gray;
+}
+
+.has-dark-silver-gray-color {
+    color: $gu-dark-silver-gray;
+}
+
+.has-silver-gray-color {
+    color: $gu-silver-gray;
+}
+
+.has-light-silver-gray-color {
+    color: $gu-light-silver-gray;
+}
+
+.has-red-color {
+    color: $gu-red;
+}
+
+.has-orange-color {
+    color: $gu-orange;
+}
+
+.has-yellow-color {
+    color: $gu-yellow;
+}
+
+.has-green-color {
+    color: $gu-green;
+}
+
+.has-purple-color {
+    color: $gu-purple;
 }
