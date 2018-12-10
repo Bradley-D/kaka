@@ -1,29 +1,45 @@
 $adminbar: 46px;
+
 /*--------------------------------------------------------------
 # Media queries.
 --------------------------------------------------------------*/
+
 $screen-md: 768px;
 $screen-lg: 992px;
 $screen-xl: 1200px;
+
 /*--------------------------------------------------------------
 # Variables - Typography.
 --------------------------------------------------------------*/
+
 // Set to the body
-$font-family-base: Helvetica,sans-serif;
+$font-family-base: Helvetica,
+sans-serif;
 $font-size-base: 10px; // This makes 1rem = 10px
 // Used for code, kbd, tt, var
 $font-family-code: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; // Used for pre
 $font-family-pre: Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+// Gutenberg Font Size.
+// Make sure these sizes meet the size set in functions.php (line 125).
+$small: 12px;
+$normal: 16px;
+$large: 36px;
+$larger: 50px;
+
 /*--------------------------------------------------------------
 # Structure.
 --------------------------------------------------------------*/
+
 $header-height: 83px;
 $container: 1140px;
 $container-full: 100%;
 $container-gutter: 15px;
+
 /*--------------------------------------------------------------
 # Colors.
 --------------------------------------------------------------*/
+
 // Base.
 $black: #121212;
 $gray: #f1f1f1;
@@ -36,9 +52,29 @@ $link-visited: $text-black; // Element Colors.
 $link-widget: $text-black;
 $link-widget-active-focus-hover: $link-active-focus-hover;
 $link-widget-visited: $text-black;
+
+// Gutenberg color palate.
+$gu-white: $white;
+$gu-black: $black;
+$gu-dark-blue: #0073AA;
+$gu-medium-blue: #00A0D2;
+
+$gu-ultra-dark-gray: #191E23;
+$gu-dark-gray: #23282D;
+$gu-base-gray: #32373C;
+$gu-dark-silver-gray: #82878C;
+$gu-silver-gray: #A0A5AA;
+$gu-light-silver-gray: #B4B9BE;
+
+$gu-red: #DC3232;
+$gu-orange: #F56E28;
+$gu-yellow: #FFB900;
+$gu-green: #46B450;
+$gu-purple: #826EB4;
 /*--------------------------------------------------------------
 # Heading Size.
 --------------------------------------------------------------*/
+
 $h1: 3.4rem;
 $h2: 2.6rem;
 $h3: 1.8rem;

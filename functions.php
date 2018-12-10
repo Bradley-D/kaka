@@ -160,6 +160,16 @@ if ( ! function_exists( 'kaka_setup' ) ) :
 		add_theme_support( 'editor-color-palette',
 			array(
 				array(
+					'name'  => __( 'White', 'kaka' ),
+					'slug'  => 'white',
+					'color' => '#FFF',
+				),
+				array(
+					'name'  => __( 'Black', 'kaka' ),
+					'slug'  => 'black',
+					'color' => '#121212',
+				),
+				array(
 					'name'  => __( 'Dark Blue', 'kaka' ),
 					'slug'  => 'dark-blue',
 					'color' => '#0073AA',
@@ -168,16 +178,6 @@ if ( ! function_exists( 'kaka_setup' ) ) :
 					'name'  => __( 'Medium Blue', 'kaka' ),
 					'slug'  => 'medium-blue',
 					'color' => '#00A0D2',
-				),
-				array(
-					'name'  => __( 'Pink Purple', 'kaka' ),
-					'slug'  => 'pink-blue',
-					'color' => '#96588A',
-				),
-				array(
-					'name'  => __( 'Blue Purple', 'kaka' ),
-					'slug'  => 'pink-blue',
-					'color' => '#826EB4',
 				),
 				array(
 					'name'  => __( 'Ultra Dark Gray', 'kaka' ),
@@ -209,6 +209,31 @@ if ( ! function_exists( 'kaka_setup' ) ) :
 					'name'  => __( 'Light Silver Gray', 'kaka' ),
 					'slug'  => 'light-silver-gray',
 					'color' => '#B4B9BE',
+				),
+				array(
+					'name'  => __( 'Red', 'kaka' ),
+					'slug'  => 'red',
+					'color' => '#DC3232',
+				),
+				array(
+					'name'  => __( 'Orange', 'kaka' ),
+					'slug'  => 'orange',
+					'color' => '#F56E28',
+				),
+				array(
+					'name'  => __( 'Yellow', 'kaka' ),
+					'slug'  => 'yellow',
+					'color' => '#FFB900',
+				),
+				array(
+					'name'  => __( 'Green', 'kaka' ),
+					'slug'  => 'green',
+					'color' => '#46B450',
+				),
+				array(
+					'name'  => __( 'Purple', 'kaka' ),
+					'slug'  => 'purple',
+					'color' => '#826EB4',
 				),
 			)
 		);
